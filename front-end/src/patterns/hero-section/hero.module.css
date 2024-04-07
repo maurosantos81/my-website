@@ -1,0 +1,46 @@
+.hero {
+  background-image: linear-gradient(
+    125deg,
+    hsl(286deg 100% 9%) 0%,
+    hsl(283deg 99% 11%) 11%,
+    hsl(280deg 100% 12%) 22%,
+    hsl(278deg 100% 14%) 34%,
+    hsl(275deg 100% 15%) 45%,
+    hsl(272deg 100% 17%) 57%,
+    hsl(270deg 100% 18%) 68%,
+    hsl(267deg 100% 20%) 79%,
+    hsl(264deg 100% 22%) 90%,
+    hsl(260deg 98% 24%) 100%
+  );
+
+  display: flex;
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 0 5rem;
+  padding-top: 88px !important;
+  padding-bottom: 0 !important;
+}
+
+.left {
+  width: 34%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.left p {
+  margin: 0;
+  color: #afa1bd;
+}
+
+.right {
+  width: 66%;
+}
+
+.hero h1 {
+  font-size: 67px;
+  font-weight: 600;
+}
