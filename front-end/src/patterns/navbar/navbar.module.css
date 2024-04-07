@@ -1,53 +1,58 @@
 .container {
-	background-color: transparent;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 1rem;
-	padding: 1.5rem 6rem;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1rem;
+  padding: 1.5rem 6rem;
 
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .container .right {
-	display: flex;
-	flex-direction: row;
-	gap: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
 }
 
 .container .right > p {
-	padding: 0.5rem 0.75rem;
-	margin: 0;
-	cursor: pointer;
-	color: #ada0b9;
+  padding: 0.5rem 0.75rem;
+  margin: 0;
+  cursor: pointer;
+  color: #ada0b9;
 
-	transition: background-color ease-in-out 0.5s;
+  transition: background-color ease-in-out 0.5s;
 }
 
 .container .right > p:hover {
-	background-color: #ffffff1e;
+  background-color: #ffffff1e;
+}
+
+.img-container {
+  width: 50px;
 }
 
 .hire-me {
-	background-color: black;
+  background-color: black;
+  width: max-content;
 }
 
 .container .right > p.hire-me:hover {
-	background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (max-width: 600px) {
-	.container {
-		padding: 1.5rem 3.5rem;
-	}
+  .container {
+    padding: 1.5rem 3.5rem;
+  }
 }
 
 @media screen and (max-width: 300px) {
-	.container {
-		padding: 1.5rem 2rem;
-	}
+  .container {
+    padding: 1.5rem 2rem;
+  }
 }

@@ -1,17 +1,24 @@
+'use client'
+
+import Image from 'next/image';
 import styles from './navbar.module.css'
 
 export default function Navbar() {
-    return <div className={styles.container}>
-        <div>
-            Inicio
-            </div>
 
-            <div className={styles.right}>
-                <p>Home</p>
-                <p>About</p>
-                <p>Skills</p>
-                <p>Portfolio</p>
-                <p className={styles['hire-me']}>Hire me</p>
-            </div>
+    const scrollTo = (sectionId) => {
+        document?.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    }
+
+  return (
+    <div className={styles.container}>
+      <Image height={50} width={50}  src='/images/logo.png' alt='icon' />
+
+      <div className={styles.right}>
+        <p onClick={() => scrollTo('about')}>About</p>
+        <p onClick={() => scrollTo('skills')}>Skills</p>
+        <p onClick={() => scrollTo('portfolio')}>Portfolio</p>
+        <p onClick={() => scrollTo('hire-me')} className={styles['hire-me']}>Hire me</p>
+      </div>
     </div>
+  )
 }
