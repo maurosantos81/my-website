@@ -1,4 +1,3 @@
-import Button from '@/components/button'
 import styles from './home.module.css'
 import AboutSection from '@/patterns/about-section'
 import SkillsSection from '@/patterns/skills-section'
