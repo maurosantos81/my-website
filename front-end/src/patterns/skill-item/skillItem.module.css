@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.box-container {
+  width: 100%;
+}
+
+.skill-txt {
+  color: var(--white-bg-p-color);
+  font-weight: 600;
+}
+
+.skill-box {
+  border: 2px solid var(--white-bg-p-color);
+}
+
+.skill-box,
+.skill-fill,
+.image-container {
+  height: 45px;
+}
+
+.skill-fill {
+  position: relative;
+  background-color: black;
+  max-width: 0%;
+  margin: -2px; /* Removing the border  */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+}
+
+.skill-fill p {
+  margin-right: 10px;
+  margin-left: 5px;
+  overflow: hidden;
+}

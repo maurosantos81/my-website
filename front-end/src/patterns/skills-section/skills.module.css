@@ -1,0 +1,15 @@
+.section {
+  background-color: white;
+}
+
+.section h2 {
+  color: black;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 700px;
+}
