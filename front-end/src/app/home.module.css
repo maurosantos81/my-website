@@ -1,0 +1,33 @@
+.home {
+  background-color: var(--dark-bg);
+  height: 100%;
+}
+
+.home > section {
+  min-height: var(--div-height);
+  padding: 3rem 6.9rem;
+}
+
+@media screen and (max-width: 800px) {
+  .home > section {
+    padding: 3rem 5.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home > section {
+    padding: 3rem 4rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .home > section {
+    padding: 3rem 3rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .home > section {
+    padding: 3rem 2.5rem;
+  }
+}
