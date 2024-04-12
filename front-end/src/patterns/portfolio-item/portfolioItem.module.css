@@ -1,0 +1,45 @@
+.item {
+  background-color: white;
+  padding: 1rem;
+  width: fit-content;
+  height: 100%;
+}
+
+.img-container {
+  border-radius: 10px;
+  height: 200px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.image {
+  object-fit: scale-down;
+}
+
+.title {
+  font-size: 1.15rem;
+}
+
+.date {
+  color: rgba(128, 128, 128, 0.785);
+  font-size: 0.8rem;
+  margin-top: -3px;
+}
+
+.description {
+  margin-top: 0.5rem;
+  color: grey;
+}
+
+.technologys {
+  margin-top: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+@media screen and (max-width: 400px) {
+  .img-container {
+    height: 150px;
+  }
+}

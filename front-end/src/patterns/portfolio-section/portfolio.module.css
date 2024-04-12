@@ -1,0 +1,8 @@
+.title {
+  margin-bottom: 0.5rem;
+}
+
+.grids {
+  display: flex;
+  gap: 1rem;
+}
