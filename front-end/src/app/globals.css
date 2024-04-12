@@ -9,9 +9,17 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --div-height: 680px;
+  --max-page-width: 1920px;
 
   --h1-font-size: calc(2.4rem + 1vw);
   --h2-font-size: calc(2rem + 0.55vw);
+
+  --white-bg-p-color: #8a8a8d;
+  --dark-bg-p-color: #a6a4a8;
+
+  --dark-bg: #131425;
+
+  --navbar-breakpoint: 525px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,7 +50,6 @@ h3,
 h4,
 h5 {
   font-family: 'Staatliches', sans-serif;
-  line-height: 75px;
   font-weight: 600;
 }
 
