@@ -1,5 +1,5 @@
 .hero {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     125deg,
     hsl(286deg 100% 9%) 0%,
     hsl(283deg 99% 11%) 11%,
@@ -11,14 +11,30 @@
     hsl(267deg 100% 20%) 79%,
     hsl(264deg 100% 22%) 90%,
     hsl(260deg 98% 24%) 100%
+  ); */
+
+  background-image: linear-gradient(
+    135deg,
+    hsl(261deg 65% 37%) 1%,
+    hsl(300deg 56% 48%) 48%,
+    hsl(340deg 70% 59%) 61%,
+    hsl(3deg 87% 65%) 70%,
+    hsl(9deg 91% 64%) 80%,
+    hsl(16deg 95% 62%) 100%
   );
 
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   margin: 0 auto;
   padding: 0 5rem;
   padding-top: 88px !important;
   padding-bottom: 0 !important;
+}
+
+.hero h1 {
+  font-size: 67px;
+  font-weight: 600;
+  line-height: 75px;
 }
 
 .left {
@@ -37,10 +53,21 @@
 }
 
 .right {
-  width: 66%;
+  width: calc(66% - 20px * 2);
+  position: relative;
+  display: flex;
+  margin: 40px 20px;
+  margin-right: 0;
 }
 
-.hero h1 {
-  font-size: 67px;
-  font-weight: 600;
+.img {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Change the max-width also in navbar.module.css */
+@media screen and (max-width: 525px) {
+  .hero {
+    padding-top: 125px !important;
+  }
 }
