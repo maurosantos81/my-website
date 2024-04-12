@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.left {
+}
+
+.right {
+  width: calc(400px + 6rem);
+  height: calc(400px + 4rem);
+  border-radius: 8px;
+  padding: 3rem 4rem;
+  background-image: linear-gradient(
+    50deg,
+    hsl(229deg 100% 62%) 0%,
+    hsl(232deg 100% 63%) 16%,
+    hsl(235deg 100% 65%) 29%,
+    hsl(238deg 100% 66%) 41%,
+    hsl(242deg 100% 66%) 51%,
+    hsl(245deg 100% 66%) 59%,
+    hsl(249deg 100% 65%) 66%,
+    hsl(252deg 100% 64%) 72%,
+    hsl(255deg 100% 63%) 77%,
+    hsl(259deg 99% 62%) 82%,
+    hsl(262deg 98% 60%) 87%,
+    hsl(265deg 97% 59%) 93%,
+    hsl(268deg 96% 57%) 100%
+  );
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 8px;
+}
