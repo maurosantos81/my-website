@@ -3,7 +3,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 1rem;
   padding: 1.5rem 6rem;
 
   display: flex;
@@ -17,6 +16,7 @@
   display: flex;
   flex-direction: row;
   gap: 0.75rem;
+  align-items: center;
 }
 
 .container .right > p {
@@ -24,6 +24,8 @@
   margin: 0;
   cursor: pointer;
   color: #ada0b9;
+
+  font-size: calc(0.7rem + 0.3vw);
 
   transition: background-color ease-in-out 0.5s;
 }
@@ -49,10 +51,37 @@
   .container {
     padding: 1.5rem 3.5rem;
   }
+
+  .container .right {
+    gap: 0.5rem;
+  }
 }
 
-@media screen and (max-width: 300px) {
+/* Change the max-width also in hero.module.css */
+@media screen and (max-width: 525px) {
   .container {
-    padding: 1.5rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .container .right {
+    gap: 0.25rem;
+  }
+
+  .container .right > p {
+    padding: 0.5rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  .container .right {
+    display: none;
   }
 }

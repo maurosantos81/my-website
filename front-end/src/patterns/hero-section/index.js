@@ -1,5 +1,6 @@
 import Button from '@/components/button'
 import styles from './hero.module.css'
+import Image from 'next/image';
 
 export default function HeroSection() {
     return <section id='hero' className={styles.hero}>
@@ -7,13 +8,10 @@ export default function HeroSection() {
       <h1>MAURO SANTOS</h1>
       <p>A full stack developer</p>
 
-      <div className={styles.buttons}>
-        <Button>View projects</Button>
-        <Button>Contact me</Button>
-      </div>
-
       <p>Crafting digital experiences</p>
     </div>
-    <div className={styles.right}></div>
+    <div className={styles.right}>
+      <Image className={styles.img} fill src='/images/hero.jpeg' alt="a developer programming" />
+    </div>
   </section>
 }
