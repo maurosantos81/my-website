@@ -1,12 +1,12 @@
 'use client'
 
-import { createMuiTheme } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2' // Grid version 2
 import styles from './portfolio.module.css'
 import { useState } from 'react'
 import PortfolioItem from '../portfolio-item'
 import { ThemeProvider } from '@emotion/react'
 import WidthLimitedSection from '@/components/widthLimitedSection'
+import { createTheme } from '@mui/material/styles'
 
 function compareDates(dateString1, dateString2) {
   // Convert string dates to Date objects
@@ -57,7 +57,7 @@ export default function PortfolioSection() {
 
       <div className={styles.grids}>
         <ThemeProvider
-          theme={createMuiTheme({
+          theme={createTheme({
             breakpoints: {
               values: {
                 lg: 1280,
