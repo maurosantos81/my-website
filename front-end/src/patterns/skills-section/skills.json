@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "/images/java-icon.png",
+    "skill": "Java",
+    "level": 80
+  },
+  {
+    "icon": "/images/react-icon.svg.png",
+    "skill": "React JS / Next JS",
+    "level": 90
+  },
+  {
+    "icon": "/images/html-icon.png",
+    "skill": "HTML",
+    "level": 70
+  },
+  {
+    "icon": "/images/css-icon.png",
+    "skill": "CSS",
+    "level": 70
+  },
+  {
+    "icon": "/images/python-logo-only.png",
+    "skill": "Python",
+    "level": 40
+  },
+  {
+    "icon": "/images/mysql-icon.png",
+    "skill": "MySQL",
+    "level": 40
+  }
+]
