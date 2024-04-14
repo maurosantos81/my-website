@@ -15,6 +15,7 @@
   --h2-font-size: calc(2rem + 0.55vw);
 
   --white-bg-p-color: #8a8a8d;
+  --white-bg-light-color: #e5e7eb;
   --dark-bg-p-color: #a6a4a8;
 
   --dark-bg: #131425;
@@ -41,7 +42,7 @@ body {
 }
 
 p {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 h1,
@@ -49,7 +50,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Staatliches', sans-serif;
+  font-family: 'Staatliches', sans-serif !important;
   font-weight: 600;
 }
 
