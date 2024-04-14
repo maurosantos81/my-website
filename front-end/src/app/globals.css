@@ -61,6 +61,11 @@ h2 {
   font-size: var(--h2-font-size);
 }
 
+.limit-width {
+  max-width: var(--max-page-width);
+  margin: 0 auto;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

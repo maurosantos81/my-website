@@ -2,8 +2,12 @@
   background-color: transparent;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
   padding: 1.5rem 6rem;
+  /* 6rem related to padding-x */
+  max-width: calc(var(--max-page-width) + 6rem * 2);
 
   display: flex;
   justify-content: space-between;

@@ -1,7 +1,10 @@
+import WidthLimitedSection from '@/components/widthLimitedSection'
 import styles from './hire.module.css'
 
 export default function HireMeSection() {
-    return <section id="hire-me">
-        <h2>Hire Me!</h2>
-    </section>
+  return (
+    <WidthLimitedSection id='hire-me' className={styles.section}>
+      <h2>Hire Me!</h2>
+    </WidthLimitedSection>
+  )
 }
