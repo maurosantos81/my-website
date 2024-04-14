@@ -1,0 +1,41 @@
+[
+  {
+    "level": "100 - 80%",
+    "descriptions": [
+      "I can solve complex problems efficiently",
+      "I write highly optimized, scalable, and maintainable code",
+      "I have extensive experience with real-world applications projects"
+    ]
+  },
+  {
+    "level": "80 - 60%",
+    "descriptions": [
+      "I am capable of solving complex problems with some effort",
+      "I am proficient in writing clean and maintainable code",
+      "I have experience with real-world applications and projects"
+    ]
+  },
+  {
+    "level": "60 - 40%",
+    "descriptions": [
+      "I can solve moderate coding challenges independently",
+      "I am beginning to grasp more advanced concepts",
+      "I am able to write code that works, but may lack optimization and efficiency"
+    ]
+  },
+  {
+    "level": "40 - 20%",
+    "descriptions": [
+      "I have difficulty coding simple tasks independently",
+      "I struggle with more advanced concepts and problem-solving",
+      "I have limited experience with real-world applications"
+    ]
+  },
+  {
+    "level": "20 - 0%",
+    "descriptions": [
+      "I have difficulty solving even basic problems",
+      "I lack familiarity with language features"
+    ]
+  }
+]

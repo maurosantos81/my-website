@@ -35,7 +35,7 @@ const PROJECTS = [
     date: '11/04/2024',
     img: '/images/entre-agulhas-e-pinturas.png',
     url: 'https://entre-agulhas-e-pinturas.vercel.app/',
-    technologys: ['Java', 'MySQL', 'Next JS'],
+    technologys: ['Java', 'Spring Boot', 'MySQL', 'Next JS'],
   },
   {
     name: 'This Website',
