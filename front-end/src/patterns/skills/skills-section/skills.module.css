@@ -3,6 +3,10 @@
   color: black;
 }
 
+.section h2 {
+  text-align: center;
+}
+
 .tooltip {
   background-color: red;
 }
@@ -10,6 +14,7 @@
 .skills-and-legend-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   gap: 1.6rem;
 }
