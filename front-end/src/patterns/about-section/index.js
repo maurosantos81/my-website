@@ -48,7 +48,7 @@ export default function AboutSection() {
           proven techniques, all while ensuring the delivery of high-quality
           code.
         </p>
-        <p>
+        <p className={styles.bold}>
           Let&apos;s connect and embark on a journey of innovation and success
           together!
         </p>

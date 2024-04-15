@@ -22,6 +22,10 @@
   font-weight: 300;
 }
 
+.bold {
+  font-weight: 700 !important;
+}
+
 .curriculum-button {
   color: white;
   border-color: white;
