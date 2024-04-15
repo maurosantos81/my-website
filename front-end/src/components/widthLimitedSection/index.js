@@ -1,6 +1,6 @@
 export default function WidthLimitedSection({
   children,
-  divClassName,
+  divClassName = '',
   ...props
 }) {
   return (
