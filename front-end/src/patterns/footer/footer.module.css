@@ -1,0 +1,14 @@
+.footer {
+  height: 225px;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: white;
+  color: var(--white-bg-p-color);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
