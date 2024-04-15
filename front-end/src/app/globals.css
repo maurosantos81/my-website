@@ -45,7 +45,6 @@ body {
 p {
   font-family: 'Poppins', sans-serif !important;
   font-size: var(--p-font-size);
-  color: white;
 }
 
 h1,
@@ -55,7 +54,6 @@ h4,
 h5 {
   font-family: 'Staatliches', sans-serif !important;
   font-weight: 600;
-  color: white;
 }
 
 h1 {
