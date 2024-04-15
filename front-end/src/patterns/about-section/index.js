@@ -17,8 +17,8 @@ export default function AboutSection() {
         <h2>Hi, I&apos;m Mauro. Nice to meet you!</h2>
         <p>
           My programming journey began almost a decade ago, due to an insatiable
-          curiosity and a desire to create minecraft plugins (as you can see on
-          my old{' '}
+          curiosity and a desire to create my own minecraft plugins (as you can
+          see on my old{' '}
           <Link text href='https://www.youtube.com/@M4UR0Dev'>
             Youtube channel
           </Link>
@@ -26,9 +26,8 @@ export default function AboutSection() {
         </p>
         <p>
           After my carrer as a minecraft plugin developer ended prematurely, I
-          transitioned to programming desktop applications using Java. This
-          journey continued until I completed my degree in Computer Engineering
-          at the{' '}
+          started to programming desktop applications using Java. This journey
+          continued until I completed my degree in Computer Engineering at the{' '}
           <Link text href='https://www.ualg.pt/'>
             University of Algarve
           </Link>{' '}
@@ -37,14 +36,14 @@ export default function AboutSection() {
             Eviden
           </Link>
           , where I&apos;ve been employed for nearly two years. It was at Eviden
-          where I was introduced to React and the world of web development.
+          where I met React and the world of web development.
         </p>
         <p>
           In addition to my academic and professional journey, I am dedicated to
           continual growth and learning, both personally and professionally. I
-          strive to remain at the forefront of industry advancements, constantly
-          seeking opportunities to expand my skill set and deepen my knowledge.
-          My approach to work is centered around maximizing productivity through
+          strive to stay aware of industry advancements, constantly seeking
+          opportunities to expand my skill set and deepen my knowledge. My
+          approach to work is centered around maximizing my productivity through
           the strategic application of artificial intelligence tools and other
           proven techniques, all while ensuring the delivery of high-quality
           code.
