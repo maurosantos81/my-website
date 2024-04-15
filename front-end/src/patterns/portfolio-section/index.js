@@ -52,7 +52,7 @@ export default function PortfolioSection() {
   const [projects, setProjects] = useState(PROJECTS)
 
   return (
-    <WidthLimitedSection id='portfolio'>
+    <WidthLimitedSection divClassName={styles.section} id='portfolio'>
       <h2 className={styles.title}>Portfolio</h2>
 
       <div className={styles.grids}>
@@ -68,7 +68,7 @@ export default function PortfolioSection() {
             },
           })}
         >
-          <Grid container spacing={{ xs: 2, md: 3 }}>
+          <Grid container justifyContent={'center'} spacing={{ xs: 2, md: 3 }}>
             {projects
               ?.sort((p1, p2) => compareDates(p1.date, p2.date))
               .map((project) => (

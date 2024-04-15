@@ -1,3 +1,7 @@
+.section h2 {
+  text-align: center;
+}
+
 .title {
   margin-bottom: 0.5rem;
 }
@@ -5,4 +9,5 @@
 .grids {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
