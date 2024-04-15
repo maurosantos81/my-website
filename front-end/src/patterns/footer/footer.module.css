@@ -1,7 +1,6 @@
 .footer {
   height: min(140px, calc(110px + 1.8vw));
   background-color: white;
-  color: var(--white-bg-p-color);
 }
 
 .footer > div {
@@ -18,6 +17,10 @@
   align-items: center;
   gap: 12px;
   height: 100%;
+}
+
+.container p {
+  color: var(--white-bg-p-color);
 }
 
 .social-medias {
