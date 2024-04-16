@@ -2,11 +2,10 @@
 
 import Image from 'next/image'
 import styles from './navbar.module.css'
+import useScrollTo from '@/hooks/useScrollTo'
 
 export default function Navbar() {
-  const scrollTo = (sectionId) => {
-    document?.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
-  }
+  const { scrollTo } = useScrollTo()
 
   return (
     <nav className={`${styles.container}`}>
