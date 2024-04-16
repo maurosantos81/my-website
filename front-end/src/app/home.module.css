@@ -8,6 +8,12 @@
   padding: 3rem 6.9rem;
 }
 
+@media screen and (max-width: 1000px) {
+  .home > section {
+    padding: 3rem 6rem;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .home > section {
     padding: 3rem 5.5rem;

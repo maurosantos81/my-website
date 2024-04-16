@@ -11,7 +11,7 @@
   --div-height: 680px;
   --max-page-width: 1920px;
 
-  --h1-font-size: calc(2.3rem + 1.1vw);
+  --h1-font-size: min(calc(1.8rem + 1.9vw), 110px);
   --h2-font-size: calc(1.9rem + 0.65vw);
   --p-font-size: calc(0.675rem + 0.4vw);
 
@@ -58,6 +58,7 @@ h5 {
 
 h1 {
   font-size: var(--h1-font-size);
+  font-weight: 900;
 }
 
 h2 {
