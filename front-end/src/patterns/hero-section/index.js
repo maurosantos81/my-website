@@ -1,9 +1,14 @@
+'use client'
+
 import styles from './hero.module.css'
 import Image from 'next/image'
 import WidthLimitedSection from '@/components/widthLimitedSection'
 import Button from '@/components/button'
+import useScrollTo from '@/hooks/useScrollTo'
 
 export default function HeroSection() {
+  const { scrollTo } = useScrollTo()
+
   return (
     <WidthLimitedSection
       id='hero'
@@ -22,7 +27,9 @@ export default function HeroSection() {
           into reality!
         </p>
 
-        <Button variant='filled'>Contact me</Button>
+        <Button onClick={() => scrollTo('hire-me')} variant='filled'>
+          Contact me
+        </Button>
       </div>
       <div className={styles.right} />
       {/* <Image
