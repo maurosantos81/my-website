@@ -54,7 +54,7 @@
   width: 100%;
   /* 107px related to padding-top in .container */
   /* 48px related to padding-bottom*/
-  min-height: calc(var(--div-height) - 107px - 3rem);
+  min-height: calc(var(--div-height) - 107px);
 }
 
 .left {
@@ -149,7 +149,7 @@
   }
 
   .hero {
-    min-height: calc(var(--div-height) - 143px - 3rem);
+    min-height: calc(var(--div-height) - 143px);
   }
 }
 
