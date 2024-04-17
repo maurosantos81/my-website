@@ -46,7 +46,7 @@ export default function SkillItem({ skill, level, icon }) {
   const boundingElement = useRef()
   const [filledLevel, setFilledLevel] = useState(0)
   const [filledLevelStr, setFilledLevelStr] = useState(0)
-  const { getDescriptions } = useSkillLevelDescription(level)
+  const { getDescriptions } = useSkillLevelDescription()
 
   useEffect(() => {
     setFilledLevel(level)
