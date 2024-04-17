@@ -4,7 +4,7 @@ import Image from '@/components/image'
 import styles from './about.module.css'
 import WidthLimitedSection from '@/components/widthLimitedSection'
 import { Button } from '@mui/material'
-import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward'
+import DownloadIcon from '@mui/icons-material/Download'
 import Link from '@/components/link'
 import useFileDownloader from '@/hooks/useFileDownloader'
 
@@ -57,7 +57,7 @@ export default function AboutSection() {
       <Button
         className={styles['curriculum-button']}
         variant='outlined'
-        endIcon={<ArrowOutwardIcon sx={{ fontSize: '15px' }} />}
+        endIcon={<DownloadIcon sx={{ fontSize: '15px' }} />}
         onClick={() => download('/cv.pdf', 'Mauro_CV.pdf')}
         sx={{
           color: 'white',
