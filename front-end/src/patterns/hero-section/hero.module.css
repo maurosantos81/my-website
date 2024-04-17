@@ -93,6 +93,15 @@
   color: #afa1bd;
 }
 
+.left button {
+  margin-top: 10px;
+  background-color: black;
+}
+
+.left button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 .left,
 .right {
   width: 100%;

@@ -5,7 +5,6 @@ import WidthLimitedSection from '@/components/widthLimitedSection'
 import Button from '@/components/button'
 import useScrollTo from '@/hooks/useScrollTo'
 import useTypewriter from '@/hooks/useTypewriter'
-import Link from '@/components/link'
 
 export default function HeroSection() {
   const { scrollTo } = useScrollTo()
@@ -26,10 +25,10 @@ export default function HeroSection() {
           Developer! With a passion for coding, I&apos;m here to bring fresh
           perspectives and innovation to every task. From robust backend
           solutions to stylish frontend interfaces, I&apos;ll turn your ideas
-          into reality! <Link href='contact'>Get in touch</Link>
+          into reality!{' '}
         </p>
 
-        <Button onClick={() => scrollTo('hire-me')} variant='filled'>
+        <Button onClick={() => scrollTo('hire-me')} variant='contained'>
           Contact me
         </Button>
       </div>
