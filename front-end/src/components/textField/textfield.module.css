@@ -1,0 +1,15 @@
+.label {
+  color: var(--white-bg-p-color);
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.label:global(.Mui-focused) {
+  color: var(--white-bg-p-color);
+}
+
+.error {
+  color: #fa0000;
+  text-align: left;
+  font-size: 0.75rem;
+}
