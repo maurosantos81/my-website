@@ -2,3 +2,33 @@
   background-color: white;
   color: black;
 }
+
+.section h2 {
+  text-align: center;
+}
+
+.contact-form {
+  border-radius: 10px;
+  padding: calc(16px + 1vw);
+  margin: 0 auto;
+  margin-top: 16px;
+
+  width: 100%;
+  max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  color: white;
+}
+
+.contact-form button {
+  background-color: white;
+  color: grey;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background-color: #f3f6f9;
+}
