@@ -1,13 +1,15 @@
 'use client'
 
 import styles from './hero.module.css'
-import Image from 'next/image'
 import WidthLimitedSection from '@/components/widthLimitedSection'
 import Button from '@/components/button'
 import useScrollTo from '@/hooks/useScrollTo'
+import useTypewriter from '@/hooks/useTypewriter'
+import Link from '@/components/link'
 
 export default function HeroSection() {
   const { scrollTo } = useScrollTo()
+  const title = useTypewriter('Mauro Santos', 45)
 
   return (
     <WidthLimitedSection
@@ -16,7 +18,7 @@ export default function HeroSection() {
       divClassName={styles.hero}
     >
       <div className={styles.left}>
-        <h1>MAURO SANTOS</h1>
+        <h1>{title}</h1>
         <h2>Full-Stack Developer</h2>
 
         <p>
@@ -24,7 +26,7 @@ export default function HeroSection() {
           Developer! With a passion for coding, I&apos;m here to bring fresh
           perspectives and innovation to every task. From robust backend
           solutions to stylish frontend interfaces, I&apos;ll turn your ideas
-          into reality!
+          into reality! <Link href='contact'>Get in touch</Link>
         </p>
 
         <Button onClick={() => scrollTo('hire-me')} variant='filled'>
