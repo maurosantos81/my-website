@@ -72,14 +72,14 @@ export default function PortfolioSection() {
             {projects
               ?.sort((p1, p2) => compareDates(p1.date, p2.date))
               .map((project) => (
-                <Grid key={project.name} item xs={12} sm={6} md={4}>
+                <Grid key={project.name} xs={12} sm={6} md={4}>
                   <PortfolioItem {...project} />
                 </Grid>
               ))}
 
             {!projects &&
               Array.from(Array(6)).map((_, index) => (
-                <Grid item xs={12} sm={6} md={4} key={index}>
+                <Grid xs={12} sm={6} md={4} key={index}>
                   <PortfolioItem />
                 </Grid>
               ))}
