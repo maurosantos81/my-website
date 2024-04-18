@@ -17,7 +17,7 @@
 .skill-txt {
   color: var(--white-bg-p-color);
   font-weight: 600;
-  font-size: calc(0.65rem + 0.3vw);
+  font-size: var(--p-small-font-size);
 }
 
 .skill-box {
@@ -45,5 +45,5 @@
   margin-right: calc(8px + 0.15vw);
   margin-left: 5px;
   overflow: hidden;
-  font-size: min(calc(0.65rem + 0.3vw), calc(24px + 0.5vw));
+  font-size: min(var(--p-small-font-size), calc(24px + 0.5vw));
 }
