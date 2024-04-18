@@ -68,9 +68,13 @@
 }
 
 .left h1 {
-  color: white;
   line-height: 1.15;
   white-space: pre;
+}
+
+.left h1,
+.left h2 {
+  color: white;
 }
 
 .left h1::after {
