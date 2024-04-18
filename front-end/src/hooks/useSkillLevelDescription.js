@@ -1,4 +1,4 @@
-import skillLevels from '../skill-section-percentages-definition/skillsLevelDefinitions.json'
+import skillLevels from '@/patterns/skills/skill-section-percentages-definition/skillsLevelDefinitions.json'
 
 export default function useSkillLevelDescription() {
   const getDescriptions = (level) => {
