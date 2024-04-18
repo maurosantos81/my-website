@@ -3,44 +3,12 @@
 import Image from 'next/image'
 import styles from './skillItem.module.css'
 import { useEffect, useRef, useState } from 'react'
-import { Paper, Tooltip, tooltipClasses } from '@mui/material'
-import styled from '@emotion/styled'
 import useSkillLevelDescription from '@/hooks/useSkillLevelDescription'
 import { animate } from 'framer-motion'
+import Tooltip from '@/components/tooltip'
 
 const TRANSITION_DELAY = 1.55
 const IMAGE_SIZE = 33
-
-const BootstrapTooltip = styled(({ className, ...props }) => (
-  <Tooltip
-    components={Paper}
-    elevation={2}
-    placement='bottom-end'
-    slotProps={{
-      popper: {
-        modifiers: [
-          {
-            name: 'offset',
-            options: {
-              offset: [0, -8],
-            },
-          },
-        ],
-      },
-    }}
-    {...props}
-    arrow
-    classes={{ popper: className }}
-  />
-))(({ theme }) => ({
-  [`& .${tooltipClasses.arrow}`]: {
-    color: 'black',
-  },
-  [`& .${tooltipClasses.tooltip}`]: {
-    backgroundColor: 'black',
-    padding: '0.8rem',
-  },
-}))
 
 export default function SkillItem({ skill, level, icon, saw }) {
   const percentageTextRef = useRef()
@@ -78,7 +46,7 @@ export default function SkillItem({ skill, level, icon, saw }) {
       <div className={styles['box-container']}>
         <p className={styles['skill-txt']}>{skill}</p>
         <div className={styles['skill-box']}>
-          <BootstrapTooltip
+          <Tooltip
             title={getDescriptions(level)?.map((desc, index) => (
               <p key={index}>{`${desc}.`}</p>
             ))}
@@ -92,7 +60,7 @@ export default function SkillItem({ skill, level, icon, saw }) {
             >
               <p ref={percentageTextRef}>0%</p>
             </div>
-          </BootstrapTooltip>
+          </Tooltip>
         </div>
       </div>
     </article>
