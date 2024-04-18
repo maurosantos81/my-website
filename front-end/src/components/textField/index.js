@@ -3,7 +3,6 @@
 import styled from '@emotion/styled'
 import { FormControl, InputBase, InputLabel } from '@mui/material'
 import styles from './textfield.module.css'
-import { useState } from 'react'
 
 const BootstrapTextField = styled(InputBase)(({ theme }) => ({
   'label + &': {
@@ -22,7 +21,7 @@ const BootstrapTextField = styled(InputBase)(({ theme }) => ({
   },
 }))
 
-export default function TextField({ label, error, ...props }) {
+export default function TextField({ label, id, name, error, ...props }) {
   return (
     <FormControl variant='standard'>
       <InputLabel
@@ -33,11 +32,11 @@ export default function TextField({ label, error, ...props }) {
           marginTop: '4px',
         }}
         shrink
-        htmlFor='bootstrap-input'
+        htmlFor={id || name}
       >
         {label}
       </InputLabel>
-      <BootstrapTextField {...props} />{' '}
+      <BootstrapTextField id={id || name} {...props} />{' '}
       <p className={styles.error}>{error?.message}</p>
     </FormControl>
   )

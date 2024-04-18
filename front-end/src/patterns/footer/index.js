@@ -8,10 +8,12 @@ const SOCIAL_MEDIAS = [
   {
     icon: <LinkedInIcon />,
     href: 'https://linkedin.com/in/maurosantos81/',
+    title: 'linkedIn',
   },
   {
     icon: <GitHubIcon />,
     href: 'https://github.com/maurosantos81/',
+    title: 'github',
   },
 ]
 
@@ -24,7 +26,11 @@ export default function Footer() {
           <p>© Mauro Santos, 2024</p>
           <div className={styles['social-medias']}>
             {SOCIAL_MEDIAS.map((socialMedia) => (
-              <Link key={socialMedia.href} href={socialMedia.href}>
+              <Link
+                key={socialMedia.href}
+                title={socialMedia.title}
+                href={socialMedia.href}
+              >
                 {socialMedia.icon}
               </Link>
             ))}

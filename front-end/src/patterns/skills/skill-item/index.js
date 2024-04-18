@@ -51,6 +51,7 @@ export default function SkillItem({ skill, level, icon, saw }) {
 
   useEffect(() => {
     if (!saw) return
+
     setFilledLevel(level)
 
     const node = percentageTextRef.current

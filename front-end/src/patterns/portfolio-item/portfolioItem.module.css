@@ -21,14 +21,14 @@
 }
 
 .date {
-  color: rgba(128, 128, 128, 0.785);
+  color: rgb(114, 114, 114);
   font-size: 0.8rem;
   margin-top: -3px;
 }
 
 .description {
   margin-top: 0.5rem;
-  color: grey;
+  color: var(--white-bg-p-color);
 }
 
 .technologys {
