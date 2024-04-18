@@ -32,8 +32,6 @@ export default function HireMeForm() {
     },
   })
 
-  const [submited, setSubmited] = useState(false)
-  const [error, setError] = useState(false)
   const [submitting, setSubmitting] = useState(false)
   const [sendEmailState, sendEmailAction] = useFormState(sendEmail, {
     error: null,
@@ -41,22 +39,12 @@ export default function HireMeForm() {
   })
   const onSubmit = (data) => {
     reset()
-    setError(false)
-    setSubmited(false)
     setSubmitting(true)
-
     sendEmailAction(data)
   }
 
   useEffect(() => {
     setSubmitting(false)
-    if (sendEmailState.success) {
-      setSubmited(true)
-    }
-
-    if (sendEmailState.error) {
-      setError(true)
-    }
   }, [sendEmailState])
 
   return (
@@ -67,13 +55,15 @@ export default function HireMeForm() {
       onSubmit={handleSubmit(onSubmit)}
       className={styles['contact-form']}
     >
-      {submited && (
+      {sendEmailState.success && (
         <Alert icon={<CheckIcon fontSize='inherit' />} severity='success'>
           {FORM_SUBMITED_MESSAGE}
         </Alert>
       )}
 
-      {error && <Alert severity='error'>{FORM_ERROR_MESSAGE}</Alert>}
+      {sendEmailState.error && (
+        <Alert severity='error'>{FORM_ERROR_MESSAGE}</Alert>
+      )}
 
       <TextFieldController
         name='name'
