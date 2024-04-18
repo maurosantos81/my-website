@@ -1,6 +1,5 @@
-import { Button as MUIButton } from '@mui/material'
-import styles from './button.module.css'
+import { LoadingButton } from '@mui/lab'
 
-export default function Button({...props}) {
-    return (<MUIButton {...props}></MUIButton>)
+export default function Button({ ...props }) {
+  return <LoadingButton {...props}></LoadingButton>
 }

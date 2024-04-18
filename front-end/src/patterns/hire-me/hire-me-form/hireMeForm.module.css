@@ -1,12 +1,3 @@
-.section {
-  background-color: white;
-  color: black;
-}
-
-.section h2 {
-  text-align: center;
-}
-
 .contact-form {
   border-radius: 10px;
   padding: calc(16px + 1vw);
