@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Paper, Tooltip, tooltipClasses } from '@mui/material'
 import styled from '@emotion/styled'
 import useSkillLevelDescription from '@/hooks/useSkillLevelDescription'
+import { animate } from 'framer-motion'
 
 const TRANSITION_DELAY = 1.55
 const IMAGE_SIZE = 33
@@ -42,33 +43,27 @@ const BootstrapTooltip = styled(({ className, ...props }) => (
   },
 }))
 
-export default function SkillItem({ skill, level, icon }) {
-  const boundingElement = useRef()
+export default function SkillItem({ skill, level, icon, saw }) {
+  const percentageTextRef = useRef()
+
   const [filledLevel, setFilledLevel] = useState(0)
-  const [filledLevelStr, setFilledLevelStr] = useState(0)
   const { getDescriptions } = useSkillLevelDescription()
 
   useEffect(() => {
+    if (!saw) return
     setFilledLevel(level)
 
-    const delay = TRANSITION_DELAY / level
-    const delayInMili = delay * 1000
+    const node = percentageTextRef.current
 
-    let timeout
-    timeout = setInterval(() => {
-      setFilledLevelStr((filled) => {
-        if (level > filled) {
-          return filled + 1
-        }
-        clearInterval(timeout)
-        return filled
-      })
-    }, delayInMili)
+    const controls = animate(0, level, {
+      duration: TRANSITION_DELAY,
+      onUpdate(value) {
+        node.textContent = `${value.toFixed(0)}%`
+      },
+    })
 
-    return () => {
-      clearInterval(timeout)
-    }
-  }, [])
+    return () => controls.stop()
+  }, [saw])
 
   return (
     <article className={styles.container}>
@@ -82,7 +77,7 @@ export default function SkillItem({ skill, level, icon }) {
       </div>
       <div className={styles['box-container']}>
         <p className={styles['skill-txt']}>{skill}</p>
-        <div ref={boundingElement} className={styles['skill-box']}>
+        <div className={styles['skill-box']}>
           <BootstrapTooltip
             title={getDescriptions(level)?.map((desc, index) => (
               <p key={index}>{`${desc}.`}</p>
@@ -95,7 +90,7 @@ export default function SkillItem({ skill, level, icon }) {
               }}
               className={styles['skill-fill']}
             >
-              <p>{filledLevelStr}%</p>
+              <p ref={percentageTextRef}>0%</p>
             </div>
           </BootstrapTooltip>
         </div>
