@@ -4,8 +4,8 @@ import Image from 'next/image'
 import styles from './skillItem.module.css'
 import { useEffect, useRef, useState } from 'react'
 import { Paper, Tooltip, tooltipClasses } from '@mui/material'
-import useSkillLevelDescription from './useSkillLevelDescription'
 import styled from '@emotion/styled'
+import useSkillLevelDescription from '@/hooks/useSkillLevelDescription'
 
 const TRANSITION_DELAY = 1.55
 const IMAGE_SIZE = 33
