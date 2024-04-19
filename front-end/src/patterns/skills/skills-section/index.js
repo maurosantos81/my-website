@@ -1,7 +1,7 @@
 'use client'
 
 import styles from './skills.module.css'
-import skills from './skills.json'
+import skills from '@/json/skills.json'
 import WidthLimitedSection from '@/components/widthLimitedSection'
 import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'

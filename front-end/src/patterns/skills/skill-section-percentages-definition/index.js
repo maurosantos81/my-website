@@ -1,5 +1,5 @@
 import styles from './percentagesDefinition.module.css'
-import levelDefinitions from './skillsLevelDefinitions.json'
+import levelDefinitions from '@/json/skillsLevelDefinitions.json'
 
 export default function PercentagesDefinition() {
   return (
