@@ -19,28 +19,30 @@ export default function PortfolioItem({
       component={'article'}
       className={styles.item}
     >
-      <Link href={url}>
-        <div className={styles['img-container']}>
-          <Image
-            className={styles['image']}
-            src={img}
-            // sizes='100vw'
-            alt={`Site ${name}`}
-            layout='responsive'
-            width={1000}
-            height={1000}
-          />
-        </div>
-      </Link>
-
       <div>
         <Link href={url}>
-          <h3 className={styles.title}>{name}</h3>
+          <div className={styles['img-container']}>
+            <Image
+              className={styles['image']}
+              src={img}
+              sizes='100vw'
+              alt={`Site ${name}`}
+              layout='responsive'
+              width={1000}
+              height={1000}
+            />
+          </div>
         </Link>
-        <p className={styles.date}>{date}</p>
-      </div>
 
-      <p className={styles.description}>{description}</p>
+        <div>
+          <Link href={url}>
+            <h3 className={styles.title}>{name}</h3>
+          </Link>
+          <p className={styles.date}>{date}</p>
+        </div>
+
+        <p className={styles.description}>{description}</p>
+      </div>
 
       {technologys?.length > 0 && (
         <div className={styles.technologys}>

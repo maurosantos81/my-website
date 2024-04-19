@@ -3,6 +3,9 @@
   padding: 1rem;
   width: fit-content;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .img-container {
@@ -21,7 +24,7 @@
 
 .date {
   color: rgb(114, 114, 114);
-  font-size: max(var(--p-small-font-size) - 1.5px, 0.75rem);
+  font-size: max(var(--p-small-font-size) - 1.5px, 0.55rem);
 }
 
 .description {
