@@ -8,6 +8,10 @@
   justify-content: space-between;
 }
 
+.item h2 {
+  color: white;
+}
+
 .img-container {
   border-radius: 10px;
   position: relative;
