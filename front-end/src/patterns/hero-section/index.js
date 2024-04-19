@@ -4,11 +4,10 @@ import styles from './hero.module.css'
 import WidthLimitedSection from '@/components/widthLimitedSection'
 import Button from '@/components/button'
 import useScrollTo from '@/hooks/useScrollTo'
-import useTypewriter from '@/hooks/useTypewriter'
+import AnimatedText from '@/components/animatedText/index.js'
 
 export default function HeroSection() {
   const { scrollTo } = useScrollTo()
-  const title = useTypewriter('Mauro Santos', 45)
 
   return (
     <WidthLimitedSection
@@ -17,7 +16,7 @@ export default function HeroSection() {
       divClassName={styles.hero}
     >
       <div className={styles.left}>
-        <h1>{title}</h1>
+        <AnimatedText elementType='h1' text={'Mauro Santos'} />
         <h2>Full-Stack Developer</h2>
 
         <p>
@@ -33,12 +32,6 @@ export default function HeroSection() {
         </Button>
       </div>
       <div className={styles.right} />
-      {/* <Image
-          className={styles.img}
-          fill
-          src='/images/hero-section.png'
-          alt='a pc with a sunset in screen'
-        /> */}
     </WidthLimitedSection>
   )
 }
