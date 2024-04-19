@@ -22,10 +22,13 @@ export default function PortfolioItem({
       <Link href={url}>
         <div className={styles['img-container']}>
           <Image
-            fill
             className={styles['image']}
             src={img}
+            // sizes='100vw'
             alt={`Site ${name}`}
+            layout='responsive'
+            width={1000}
+            height={1000}
           />
         </div>
       </Link>

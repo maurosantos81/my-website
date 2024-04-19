@@ -2,11 +2,11 @@
 
 import Grid from '@mui/material/Unstable_Grid2' // Grid version 2
 import styles from './portfolio.module.css'
-import { useState } from 'react'
-import PortfolioItem from '../portfolio-item'
 import { ThemeProvider } from '@emotion/react'
 import WidthLimitedSection from '@/components/widthLimitedSection'
 import { createTheme } from '@mui/material/styles'
+import PortfolioItem from '../portfolio-item'
+import projects from '@/json/portfolioItems.json'
 
 function compareDates(dateString1, dateString2) {
   // Convert string dates to Date objects
@@ -27,30 +27,7 @@ function compareDates(dateString1, dateString2) {
   }
 }
 
-const PROJECTS = [
-  {
-    name: 'Entre Agulhas e Pinturas',
-    description:
-      'Criação de uma especie de e-commerce para uma marca de artesanato.',
-    date: '11/04/2024',
-    img: '/images/entre-agulhas-e-pinturas.png',
-    url: 'https://entre-agulhas-e-pinturas.vercel.app/',
-    technologys: ['Java', 'Spring Boot', 'MySQL', 'Next JS'],
-  },
-  {
-    name: 'This Website',
-    description:
-      'Criação de uma especie de e-commerce para uma marca de artesanato.',
-    date: '16/04/2024',
-    img: '/images/',
-    url: '',
-    technologys: ['Next JS'],
-  },
-]
-
 export default function PortfolioSection() {
-  const [projects, setProjects] = useState(PROJECTS)
-
   return (
     <WidthLimitedSection divClassName={styles.section} id='portfolio'>
       <h2 className={styles.title}>Portfolio</h2>
@@ -60,19 +37,23 @@ export default function PortfolioSection() {
           theme={createTheme({
             breakpoints: {
               values: {
-                lg: 1280,
+                lg: 1430,
                 md: 1024,
-                sm: 600,
+                sm: 620,
                 xs: 0,
               },
             },
           })}
         >
-          <Grid container justifyContent={'center'} spacing={{ xs: 2, md: 3 }}>
+          <Grid
+            container
+            justifyContent={'center'}
+            spacing={{ xs: 2, md: 3, lg: 4 }}
+          >
             {projects
               ?.sort((p1, p2) => compareDates(p1.date, p2.date))
               .map((project) => (
-                <Grid key={project.name} xs={12} sm={6} md={4}>
+                <Grid key={project.name} xs={12} sm={6} md={4} lg={3}>
                   <PortfolioItem {...project} />
                 </Grid>
               ))}

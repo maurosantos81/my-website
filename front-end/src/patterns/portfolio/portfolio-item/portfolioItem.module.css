@@ -7,23 +7,21 @@
 
 .img-container {
   border-radius: 10px;
-  height: 200px;
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 24px;
 }
 
 .image {
-  object-fit: scale-down;
+  object-fit: contain;
 }
 
 .title {
-  font-size: 1.15rem;
+  font-size: max(calc(0.835rem + 0.35vw), 18px);
 }
 
 .date {
   color: rgb(114, 114, 114);
-  font-size: 0.8rem;
-  margin-top: -3px;
+  font-size: max(var(--p-small-font-size) - 1.5px, 0.75rem);
 }
 
 .description {
@@ -32,14 +30,8 @@
 }
 
 .technologys {
-  margin-top: 0.7rem;
+  margin-top: calc(0.7rem + 0.5vw);
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem;
-}
-
-@media screen and (max-width: 400px) {
-  .img-container {
-    height: 150px;
-  }
 }
