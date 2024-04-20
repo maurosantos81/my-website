@@ -1,6 +1,6 @@
 # Personal Website Project
 
-This repository contains the source code for my personal website, showcasing my skills, projects, and interests. The website is built using Next.js, a React framework known for its performance and developer-friendly features.
+This repository contains the source code for my personal website, showcasing some of my information, skills, projects and a way to contact me. The website is built using Next.js, a React framework known for its performance and developer-friendly features.
 
 ## Features
 Responsive Design: The website is designed to adapt seamlessly to various screen sizes, ensuring a consistent experience across devices.
