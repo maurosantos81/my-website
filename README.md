@@ -16,7 +16,7 @@ This repository contains the source code for my **personal website**, showcasing
 
 I've chosen **[Next.js](https://nextjs.org/)** for my project primarily because of its SEO benefits and simplified development process. With Next.js, I can ensure better search engine optimization (SEO) for my website than with React alone, by utilizing its server-side rendering (SSR) capabilities. This allows search engines to crawl and index my pages more effectively, leading to improved visibility and higher rankings on search engine result pages. Additionally, tasks such as routing and code splitting are simplified, enabling me to focus more on building features.
 
-## Libraries used
+## Libraries Used
 
 **[React Hook Form](https://react-hook-form.com/):**
 I've used React Hook Form library for the form in the "Hire Me" section, streamlining the management of form inputs, validation rules, and submission logic.
