@@ -23,9 +23,9 @@ I've used React Hook Form library for the form in the "Hire Me" section, streaml
 
 **[Material-UI](https://mui.com/):** I've used the Material-UI library to enhance the user interface of my project through a collection of pre-designed components and styles based on Google's Material Design principles. This choice simplified the design process leading to a faster development.
 
-**[Framer Motion]():** I've used the Framer Motion to incorporate animations into my project, such as for animating the title and percentage of each skill in skills section.
+**[Framer Motion](https://www.framer.com/motion/introduction/):** I've used the Framer Motion to incorporate animations into my project, such as for animating the title and percentage of each skill in skills section.
 
-**[React Email and Resend]():** I've used the React Email and Resend libraries to handle the submission of contact forms in the "Hire Me" section of my project.
+**[React Email](https://react.email/) and [Resend](https://resend.com/):** I've used the React Email and Resend libraries to handle the submission of contact forms in the "Hire Me" section of my project.
 
 ## Fonts Used
 
