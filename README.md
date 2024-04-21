@@ -1,32 +1,32 @@
 # Personal Website Project
 
-This repository contains the source code for my personal website, showcasing some of my information, skills, projects and a way to contact me. The website is built using Next.js, a React framework known for its performance and developer-friendly features.
+This repository contains the source code for my **personal website**, showcasing some of my information, skills, projects and a way to contact me.
 
-## Features
-Responsive Design: The website is designed to adapt seamlessly to various screen sizes, ensuring a consistent experience across devices.
-Dynamic Content: Leveraging Next.js's server-side rendering capabilities, the website efficiently serves dynamic content while maintaining SEO-friendliness.
-Portfolio Showcase: Displaying my projects and achievements in an organized and visually appealing manner to highlight my skills and accomplishments.
-Blog Section: A platform to share my insights, experiences, and thoughts on topics related to technology, programming, and beyond.
-Contact Form: Providing visitors with a convenient way to reach out to me, fostering communication and potential collaboration opportunities.
-Technologies Used
-Next.js: A React framework for building server-side rendered applications with ease.
-React: A JavaScript library for building user interfaces, utilized extensively throughout the project.
-CSS Modules: Scoped styling approach to ensure encapsulation and maintainability of styles.
-Markdown: Utilized for writing blog posts, enabling easy content management and formatting.
-Deployments: Deployment pipelines set up using platforms like Vercel or Netlify for continuous deployment and hosting.
-## Getting Started
-To get a local copy of the project up and running, follow these steps:
+## Interesting features
 
-Clone this repository to your local machine using git clone.
-Navigate into the project directory.
-Install dependencies by running npm install.
-Start the development server with npm run dev.
-Open your browser and visit http://localhost:3000 to view the website.
-Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+**Responsive Design**: The website is designed to adapt to various screen sizes, ensuring a consistent experience across devices.
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+**SEO:** With Next.js, the website is optimized for search engines, ensuring better visibility and ranking on search engine result pages (SERPs).
 
-## Acknowledgments
-Special thanks to the Next.js community for their valuable contributions and support in building this project.
+**Animations:** The website incorporates animations to enhance user engagement and create visually appealing interactions. Animations can be used for page transitions, scrolling effects, hover effects, and more.
+
+**Internationalization:** The website supports two languages, Portuguese and English, enhancing accessibility and user experience.
+
+## Technology Used
+
+I've chosen **[Next.js](https://nextjs.org/)** for my project primarily because of its SEO benefits and simplified development process. With Next.js, I can ensure better search engine optimization (SEO) for my website than with React alone, by utilizing its server-side rendering (SSR) capabilities. This allows search engines to crawl and index my pages more effectively, leading to improved visibility and higher rankings on search engine result pages. Additionally, tasks such as routing and code splitting are simplified, enabling me to focus more on building features.
+
+## Libraries used
+
+**[React Hook Form](https://react-hook-form.com/):**
+I've used React Hook Form library for the form in the "Hire Me" section, streamlining the management of form inputs, validation rules, and submission logic.
+
+**[Material-UI](https://mui.com/):** I've used the Material-UI library to enhance the user interface of my project through a collection of pre-designed components and styles based on Google's Material Design principles. This choice simplified the design process leading to a faster development.
+
+**[Framer Motion]():** I've used the Framer Motion to incorporate animations into my project, such as for animating the title and percentage of each skill in skills section.
+
+**[React Email and Resend]():** I've used the React Email and Resend libraries to handle the submission of contact forms in the "Hire Me" section of my project.
+
+## Fonts used
+
+I've opted to use the fonts [Staatliches](https://fonts.google.com/specimen/Staatliches) for titles and [Poppins](https://fonts.google.com/specimen/Poppins?) for the rest of the text.
