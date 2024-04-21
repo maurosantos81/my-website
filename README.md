@@ -27,6 +27,6 @@ I've used React Hook Form library for the form in the "Hire Me" section, streaml
 
 **[React Email and Resend]():** I've used the React Email and Resend libraries to handle the submission of contact forms in the "Hire Me" section of my project.
 
-## Fonts used
+## Fonts Used
 
 I've opted to use the fonts [Staatliches](https://fonts.google.com/specimen/Staatliches) for titles and [Poppins](https://fonts.google.com/specimen/Poppins?) for the rest of the text.
