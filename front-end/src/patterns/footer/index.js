@@ -8,12 +8,12 @@ const SOCIAL_MEDIAS = [
   {
     icon: <LinkedInIcon />,
     href: 'https://linkedin.com/in/maurosantos81/',
-    title: 'linkedIn',
+    title: 'LinkedIn',
   },
   {
     icon: <GitHubIcon />,
     href: 'https://github.com/maurosantos81/',
-    title: 'github',
+    title: 'Github',
   },
 ]
 
