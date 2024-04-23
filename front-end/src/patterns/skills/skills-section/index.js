@@ -9,9 +9,11 @@ import PercentagesMeaning from '../skill-section-percentages-definition'
 import SkillItem from '../skill-item'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import { useTranslations } from 'next-intl'
 
 export default function SkillsSection() {
   const [saw, setSaw] = useState()
+  const t = useTranslations('Skills')
 
   return (
     <WidthLimitedSection className={styles.section} id='skills'>
@@ -42,7 +44,7 @@ export default function SkillsSection() {
             sx={{ padding: 0 }}
           >
             <p className={styles['accordion-title']}>
-              What do these percentages mean?
+              {t('percentages-meaning.title')}
             </p>
           </AccordionSummary>
           <AccordionDetails sx={{ marginTop: '-8px' }}>

@@ -1,15 +1,27 @@
 [
   {
-    "name": "Entre Agulhas e Pinturas",
-    "description": "Full-stack project for a Portuguese artisanal brand. On this website, users can, for example, create accounts, place orders, and also, if they wish, leave reviews for products.",
+    "pt": {
+      "name": "Entre Agulhas e Pinturas",
+      "description": "Projeto full-stack para uma marca de artesanato portuguesa. Neste site, os usuários podem, por exemplo, criar contas, fazer encomendas, e também, caso desejem, avaliar produtos."
+    },
+    "en": {
+      "name": "Entre Agulhas e Pinturas",
+      "description": "Full-stack project for a Portuguese artisanal brand. On this website, users can, for example, create accounts, place orders, and also, if they wish, leave reviews for products."
+    },
     "date": "11/04/2024",
     "img": "/images/entre-agulhas-e-pinturas.png",
     "url": "https://entre-agulhas-e-pinturas.vercel.app/",
     "technologys": ["Java", "Spring Boot", "MySQL", "Next JS"]
   },
   {
-    "name": "This Website",
-    "description": "This project is none other than the website you're currently exploring. Its code can be accessed by clicking on the image. Your constructive feedback and tips for improving the code are greatly appreciated!",
+    "pt": {
+      "name": "Site Pessoal",
+      "description": "Este projeto é o site em que estás neste momento, e o seu código pode ser acessado clicando na imagem. Críticas construtivas e dicas para melhorar o código são bem-vindas!"
+    },
+    "en": {
+      "name": "Personal Website",
+      "description": "This project is the website you're currently exploring, and its code can be accessed by clicking on the image. Constructive feedback and tips to improve the code are welcome!"
+    },
     "date": "16/04/2024",
     "img": "/images/my-website.png",
     "url": "https://github.com/maurosantos81/my-website",

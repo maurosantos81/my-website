@@ -11,12 +11,7 @@ import { useForm } from 'react-hook-form'
 import styles from './hireMeForm.module.css'
 import validateEmail from '@/validators/emailValidator'
 import validateNotEmpty from '@/validators/notEmptyValidator'
-
-const FORM_SUBMITED_MESSAGE =
-  "Thank you for reaching out! I'll get back to you as soon as possible"
-
-const FORM_ERROR_MESSAGE =
-  'An error ocurred while submitting the contact form. Please try again later.'
+import { useTranslations } from 'next-intl'
 
 export default function HireMeForm() {
   const {
@@ -37,6 +32,8 @@ export default function HireMeForm() {
     error: null,
     success: false,
   })
+  const t = useTranslations('Hire-me.Form')
+
   const onSubmit = (data) => {
     reset()
     setSubmitting(true)
@@ -57,19 +54,19 @@ export default function HireMeForm() {
     >
       {sendEmailState.success && (
         <Alert icon={<CheckIcon fontSize='inherit' />} severity='success'>
-          {FORM_SUBMITED_MESSAGE}
+          {t('submit-message')}
         </Alert>
       )}
 
       {sendEmailState.error && (
-        <Alert severity='error'>{FORM_ERROR_MESSAGE}</Alert>
+        <Alert severity='error'>{t('error-message')}</Alert>
       )}
 
       <TextFieldController
         name='name'
         control={control}
         required
-        label='Name'
+        label={t('name')}
         error={errors.name}
         rules={{
           validate: { validateNotEmpty },
@@ -95,14 +92,14 @@ export default function HireMeForm() {
         multiline
         error={errors.message}
         rows={5}
-        label='Message'
+        label={t('message')}
         rules={{
           validate: { validateNotEmpty },
         }}
       />
 
       <Button loading={submitting} type='submit' variant='contained'>
-        Submit
+        {t('submit')}
       </Button>
     </Paper>
   )

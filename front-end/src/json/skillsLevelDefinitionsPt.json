@@ -1,0 +1,41 @@
+[
+  {
+    "level": "100 - 80%",
+    "descriptions": [
+      "Sou capaz de resolver problemas complexos de maneira eficiente",
+      "Escrevo código altamente otimizado, escalável e fácil de manter",
+      "Tenho bastante experiência com projectos reais."
+    ]
+  },
+  {
+    "level": "80 - 60%",
+    "descriptions": [
+      "Sou capaz de resolver problemas complexos com algum esforço",
+      "Tenho facilidade em escrever código limpo e fácil de manter",
+      "Tenho experiência com projetos reais"
+    ]
+  },
+  {
+    "level": "60 - 40%",
+    "descriptions": [
+      "Sou capaz de resolver problemas moderados de forma independente",
+      "Estou a começar a compreender conceitos mais avançados",
+      "Sou capaz de escrever código que funciona, porém pode faltar otimização e eficiência"
+    ]
+  },
+  {
+    "level": "40 - 20%",
+    "descriptions": [
+      "Tenho dificuldade resolver problemas simples de forma independente",
+      "Tenho dificuldade em compreender conceitos mais avançados",
+      "Tenho pouca experiência com projectos reais"
+    ]
+  },
+  {
+    "level": "20 - 0%",
+    "descriptions": [
+      "Tenho dificuldade em resolver até mesmo problemas básicos",
+      "Falta-me familiaridade com os aspectos da linguagem"
+    ]
+  }
+]

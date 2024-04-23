@@ -1,6 +1,7 @@
-import './globals.css'
+import '../globals.css'
 import Navbar from '@/patterns/navbar'
 import Footer from '@/patterns/footer'
+import { NextIntlClientProvider, useMessages } from 'next-intl'
 
 const DESCRIPTION =
   "Elevate your projects with a Java + Next.js Junior Full-stack Developer! With a passion for coding, I'm here to bring fresh perspectives and innovation to every task. From robust backend solutions to stylish frontend interfaces, I'll turn your ideas into reality!"
@@ -40,14 +41,24 @@ export const metadata = {
   category: 'technology',
 }
 
-export default function RootLayout({ children }) {
+// export async function generateStaticParams() {
+//   return [{ locale: 'en' }, { locale: 'pt' }]
+// }
+
+function RootLayout({ children, params }) {
+  const messages = useMessages()
+
   return (
-    <html lang='en'>
+    <html lang={params.locale}>
       <body>
-        <Navbar />
-        {children}
+        <NextIntlClientProvider locale={params.locale} messages={messages}>
+          <Navbar />
+          {children}
+        </NextIntlClientProvider>
         <Footer />
       </body>
     </html>
   )
 }
+
+export default RootLayout

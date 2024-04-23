@@ -3,15 +3,19 @@ import styles from './portfolioItem.module.css'
 import { Paper } from '@mui/material'
 import TechnologyItem from '@/components/technology-item'
 import Link from '@/components/link'
+import { useLocale } from 'next-intl'
 
 export default function PortfolioItem({
-  name,
-  description,
+  en,
+  pt,
   date,
   img,
   url = '/',
   technologys,
 }) {
+  const locale = useLocale()
+  const language = locale === 'pt' ? pt : en
+
   return (
     <Paper
       sx={{ borderRadius: '10px' }}
@@ -26,7 +30,7 @@ export default function PortfolioItem({
               className={styles['image']}
               src={img}
               sizes='100vw'
-              alt={`Site ${name}`}
+              alt={`Site ${language.name}`}
               layout='responsive'
               width={1000}
               height={1000}
@@ -36,12 +40,12 @@ export default function PortfolioItem({
 
         <div>
           <Link href={url}>
-            <h3 className={styles.title}>{name}</h3>
+            <h3 className={styles.title}>{language.name}</h3>
           </Link>
           <p className={styles.date}>{date}</p>
         </div>
 
-        <p className={styles.description}>{description}</p>
+        <p className={styles.description}>{language.description}</p>
       </div>
 
       {technologys?.length > 0 && (

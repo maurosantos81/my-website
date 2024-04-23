@@ -7,6 +7,7 @@ import WidthLimitedSection from '@/components/widthLimitedSection'
 import { createTheme } from '@mui/material/styles'
 import PortfolioItem from '../portfolio-item'
 import projects from '@/json/portfolioItems.json'
+import { useTranslations } from 'next-intl'
 
 function compareDates(dateString1, dateString2) {
   // Convert string dates to Date objects
@@ -28,9 +29,11 @@ function compareDates(dateString1, dateString2) {
 }
 
 export default function PortfolioSection() {
+  const t = useTranslations('Portfolio')
+
   return (
     <WidthLimitedSection divClassName={styles.section} id='portfolio'>
-      <h2 className={styles.title}>Portfolio</h2>
+      <h2 className={styles.title}>{t('title')}</h2>
 
       <div className={styles.grids}>
         <ThemeProvider
@@ -53,7 +56,7 @@ export default function PortfolioSection() {
             {projects
               ?.sort((p1, p2) => compareDates(p1.date, p2.date))
               .map((project) => (
-                <Grid key={project.name} xs={12} sm={6} md={4} lg={3}>
+                <Grid key={project.en.name} xs={12} sm={6} md={4} lg={3}>
                   <PortfolioItem {...project} />
                 </Grid>
               ))}
