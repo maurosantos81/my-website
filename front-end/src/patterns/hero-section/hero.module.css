@@ -99,11 +99,6 @@
   scale: 1.2;
 }
 
-.right img {
-  object-position: center;
-  object-fit: contain;
-}
-
 @media screen and (max-width: 1150px) {
   .right {
     scale: 1.5;
