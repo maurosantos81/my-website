@@ -1,4 +1,9 @@
 {
+  "Metadata": {
+    "title": "Mauro Santos - Programador Full Stack",
+    "description": "Eleva os teus projectos a um novo nível com um programador de Java e Next.js! Apaixonado por programação, estou cá para trazer prespectivas inovadoras e criativas a cada tarefa. Desde soluções back-end robustas a interfaces de front-end elegantes, vou transformar a tua ideia em realidade!",
+    "category": "tecnologia"
+  },
   "Navbar": {
     "about": "Sobre",
     "skills": "Skills",
