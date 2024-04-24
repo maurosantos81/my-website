@@ -30,7 +30,11 @@ export default function HeroSection() {
       </div>
       <div className={styles.right}>
         <Image
-          src='/images/hero-section.webp'
+          srcSet='/images/hero/hero-section_j3upiy_c_scale,w_1770.webp 590w,
+          /images/hero/hero-section_j3upiy_c_scale,w_3194.webp 800w,
+          /images/hero/hero-section.webp 1365w'
+          sizes='(min-width: 780px) 1365px, 100vw'
+          src='/images/hero/hero-section.webp'
           alt='computer with a sunset on screen'
           fill
           objectFit='contain'
