@@ -1,25 +1,4 @@
 .container {
-  /* background-image: linear-gradient(
-    115deg,
-    hsl(273deg 100% 35%) 0%,
-    hsl(271deg 97% 37%) 16%,
-    hsl(270deg 93% 38%) 30%,
-    hsl(268deg 90% 40%) 41%,
-    hsl(266deg 87% 41%) 51%,
-    hsl(264deg 84% 43%) 59%,
-    hsl(262deg 82% 44%) 65%,
-    hsl(260deg 80% 46%) 71%,
-    hsl(258deg 78% 47%) 75%,
-    hsl(256deg 77% 49%) 78%,
-    hsl(254deg 77% 50%) 81%,
-    hsl(252deg 80% 52%) 84%,
-    hsl(250deg 83% 53%) 86%,
-    hsl(247deg 87% 55%) 88%,
-    hsl(244deg 91% 56%) 91%,
-    hsl(241deg 95% 58%) 95%,
-    hsl(237deg 100% 57%) 100%
-  ); */
-
   background-image: linear-gradient(
     125deg,
     hsl(273deg 98% 23%) 0%,
@@ -53,7 +32,6 @@
   gap: 45px;
   width: 100%;
   /* 107px related to padding-top in .container */
-  /* 48px related to padding-bottom*/
   min-height: calc(var(--div-height) - 107px);
 }
 
@@ -118,11 +96,12 @@
   display: flex;
   min-height: inherit;
 
-  background-image: url(/images/hero-section.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
   scale: 1.2;
+}
+
+.right img {
+  object-position: center;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 1150px) {
@@ -150,8 +129,12 @@
     margin: 0;
     min-height: 0;
     height: calc(100vw - 6rem * 2);
-    background-size: cover;
+    /* background-size: cover; */
     scale: 1.3;
+  }
+
+  .right img {
+    object-fit: cover;
   }
 }
 
