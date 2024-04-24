@@ -1,5 +1,5 @@
 .item {
-  background-color: white;
+  background-color: #fff;
   padding: 1rem;
   width: fit-content;
   height: 100%;
@@ -9,7 +9,7 @@
 }
 
 .item h2 {
-  color: white;
+  color: #fff;
 }
 
 .img-container {

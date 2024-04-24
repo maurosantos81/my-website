@@ -1,7 +1,7 @@
 .container {
   background-color: var(--dark-bg);
   border-radius: 30px;
-  color: white;
+  color: #fff;
   padding: max(0.05vw, 0.3rem) max(0.5vw, 0.55rem);
   font-size: max(calc(var(--p-font-size) - 3.15px), 0.7rem);
   width: fit-content;

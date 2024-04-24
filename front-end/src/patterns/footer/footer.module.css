@@ -1,6 +1,6 @@
 .footer {
   height: min(140px, calc(110px + 1.8vw));
-  background-color: white;
+  background-color: #fff;
 }
 
 .footer > div {
@@ -30,8 +30,8 @@
 
 .social-medias > a > svg {
   font-size: calc(24px + 0.65vw);
-  background: black;
-  color: white;
+  background: #000;
+  color: #fff;
   padding: 4px;
   border-radius: 10px;
 }

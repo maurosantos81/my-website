@@ -1,7 +1,7 @@
 .container {
   background-image: linear-gradient(
     125deg,
-    hsl(273deg 98% 23%) 0%,
+    hsl(273deg 98% 23%) 0,
     hsl(286deg 100% 23%) 24%,
     hsl(297deg 100% 23%) 41%,
     hsl(307deg 100% 26%) 53%,
@@ -52,7 +52,7 @@
 
 .left h1,
 .left h2 {
-  color: white;
+  color: #fff;
 }
 
 .left h1::after {
@@ -78,7 +78,7 @@
 
 .left button {
   margin-top: 10px;
-  background-color: black;
+  background-color: #000;
 }
 
 .left button:hover {

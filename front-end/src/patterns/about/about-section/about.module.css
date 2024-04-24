@@ -12,16 +12,20 @@
   line-height: 1.15;
 }
 
+.text-container,
+.text-container > p,
+.curriculum-button {
+  color: #fff;
+}
+
 .text-container {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  color: white;
 }
 
 .text-container > p {
   font-weight: 300;
-  color: white;
 }
 
 .bold {
@@ -29,8 +33,7 @@
 }
 
 .curriculum-button {
-  color: white;
-  border-color: white;
+  border-color: #fff;
 }
 
 .curriculum-button > p {
@@ -45,7 +48,7 @@
   padding: min(1.5rem, 10vw);
   background-image: linear-gradient(
     50deg,
-    hsl(229deg 100% 62%) 0%,
+    hsl(229deg 100% 62%) 0,
     hsl(232deg 100% 63%) 16%,
     hsl(235deg 100% 65%) 29%,
     hsl(238deg 100% 66%) 41%,
