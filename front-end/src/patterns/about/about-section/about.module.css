@@ -42,10 +42,10 @@
 }
 
 .image-container {
+  position: relative;
   width: calc(400px + 4vw);
   height: calc(400px + 6vw);
   border-radius: 8px;
-  padding: min(1.5rem, 10vw);
   background-image: linear-gradient(
     50deg,
     hsl(229deg 100% 62%) 0,
@@ -67,8 +67,8 @@
 }
 
 .image {
-  object-fit: cover;
   border-radius: 8px;
+  padding: min(1.25rem, 10vw);
 }
 
 @media screen and (max-width: 768px) {

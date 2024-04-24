@@ -1,6 +1,5 @@
 'use client'
 
-import Image from '@/components/image'
 import styles from './about.module.css'
 import WidthLimitedSection from '@/components/widthLimitedSection'
 import { Button } from '@mui/material'
@@ -8,6 +7,7 @@ import DownloadIcon from '@mui/icons-material/Download'
 import Link from '@/components/link'
 import useFileDownloader from '@/hooks/useFileDownloader'
 import { useLocale, useTranslations } from 'next-intl'
+import Image from 'next/image'
 
 export default function AboutSection() {
   const download = useFileDownloader()
@@ -82,6 +82,8 @@ export default function AboutSection() {
           className={styles.image}
           src={'/images/me.jpg'}
           alt='Mauro photo'
+          fill
+          objectFit='cover'
         />
       </div>
     </WidthLimitedSection>
