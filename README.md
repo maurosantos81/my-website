@@ -27,6 +27,8 @@ I've used React Hook Form library for the form in the "Hire Me" section, streaml
 
 **[React Email](https://react.email/) and [Resend](https://resend.com/):** I've used the React Email and Resend libraries to handle the submission of contact forms in the "Hire Me" section of my project.
 
+**[Next-intl](https://next-intl-docs.vercel.app/):** I've used Next-intl to enhance internationalization support, thus promoting greater accessibility and user-friendliness for the users.
+
 ## Fonts Used
 
 I've opted to use the fonts [Staatliches](https://fonts.google.com/specimen/Staatliches) for titles and [Poppins](https://fonts.google.com/specimen/Poppins?) for the rest of the text.
