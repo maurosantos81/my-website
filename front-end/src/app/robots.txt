@@ -2,6 +2,4 @@ User-agent: *
 Disallow: /_next/
 Disallow: /api/
 
-Host: https://maurosantos.xyz
-
 Sitemap: https://www.maurosantos.xyz/sitemap.xml
