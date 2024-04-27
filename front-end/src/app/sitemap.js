@@ -9,7 +9,7 @@ export default function sitemap() {
 
   return [
     {
-      url: host,
+      url: getUrl(defaultLanguage),
       lastModified: new Date(),
       alternates: {
         languages: Object.fromEntries(
