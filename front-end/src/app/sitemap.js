@@ -10,7 +10,6 @@ export default function sitemap() {
   return [
     {
       url: getUrl(defaultLanguage),
-      lastModified: new Date(),
       alternates: {
         languages: Object.fromEntries(
           locales.map((locale) => [locale, getUrl(locale)]),
