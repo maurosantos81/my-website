@@ -1,6 +1,6 @@
 import { defaultLanguage, locales } from '@/constants/locales'
 
-const host = 'https://maurosantos.xyz'
+const host = 'https://www.maurosantos.xyz'
 
 export default function sitemap() {
   function getUrl(locale) {
