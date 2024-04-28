@@ -61,16 +61,14 @@ export default function AboutSection() {
         className={styles['curriculum-button']}
         variant='outlined'
         endIcon={<DownloadIcon sx={{ fontSize: '15px' }} />}
-        onClick={() => download(`/cv${locale}.pdf`, 'Mauro_CV.pdf')}
+        onClick={() => download(`/cv_${locale}.pdf`, 'Mauro_CV.pdf')}
         sx={{
           color: 'white',
-          borderColor: '#ffffff82',
+          borderColor: '#fff',
           borderRadius: '12px',
-          textTransform: 'capitalize',
           '&:hover': {
             backgroundColor: 'transparent',
-            borderColor: 'white',
-            color: 'white',
+            borderColor: '#ffffff82',
           },
         }}
       >
