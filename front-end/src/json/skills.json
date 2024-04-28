@@ -6,8 +6,8 @@
   },
   {
     "icon": "/images/react-icon.svg.png",
-    "skill": "React JS / Next JS",
-    "level": 80
+    "skill": "React JS",
+    "level": 70
   },
   {
     "icon": "/images/html-icon.png",
@@ -28,5 +28,10 @@
     "icon": "/images/mysql-icon.png",
     "skill": "MySQL",
     "level": 30
+  },
+  {
+    "icon": "/images/nextjs-icon.svg",
+    "skill": "Next.js",
+    "level": 80
   }
 ]
