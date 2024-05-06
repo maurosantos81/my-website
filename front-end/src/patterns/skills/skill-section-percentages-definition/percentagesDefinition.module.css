@@ -6,6 +6,7 @@
 
 .legend-title {
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .legend-text {
