@@ -51,12 +51,14 @@ const generateConfettiProps = () => {
   }
 }
 
-// Array to store confetti animation properties
-const confettis = Array.from({ length: numConfettis }, (_, i) => i).map(() => ({
-  ...generateConfettiProps(),
-}))
-
 const Confetti = ({ setIsConfettiActive }) => {
+  // Array to store confetti animation properties
+  const confettis = Array.from({ length: numConfettis }, (_, i) => i).map(
+    () => ({
+      ...generateConfettiProps(),
+    }),
+  )
+
   return (
     <>
       {confettis.map((confetti, index) => (
