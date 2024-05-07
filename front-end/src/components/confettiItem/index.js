@@ -7,7 +7,7 @@ const animationFrames = animationTime * 5
 const animationSpeed = 0.5
 const velocityDecreasing = 0.75
 
-const heightLimit = 215
+const heightLimit = 250
 
 export default function ConfettiItem({ confetti, setIsConfettiActive }) {
   const [scope, animate] = useAnimate()

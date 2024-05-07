@@ -12,7 +12,6 @@ import styles from './hireMeForm.module.css'
 import validateEmail from '@/validators/emailValidator'
 import validateNotEmpty from '@/validators/notEmptyValidator'
 import { useTranslations } from 'next-intl'
-import { motion } from 'framer-motion'
 import Confetti from '@/components/confetti'
 
 export default function HireMeForm() {
@@ -42,10 +41,6 @@ export default function HireMeForm() {
     reset()
     setSubmitting(true)
     sendEmailAction(data)
-  }
-
-  const handleClick = () => {
-    setIsConfettiActive(true)
   }
 
   useEffect(() => {
