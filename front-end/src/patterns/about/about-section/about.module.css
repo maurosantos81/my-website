@@ -6,6 +6,7 @@
   align-items: center;
   text-align: center;
   max-width: min(var(--max-page-width), 52vw);
+  max-width: clamp(825px, 52vw, var(--max-page-width));
 }
 
 .container h2 {
