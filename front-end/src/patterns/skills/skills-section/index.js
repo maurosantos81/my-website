@@ -17,7 +17,7 @@ export default function SkillsSection() {
 
   return (
     <WidthLimitedSection className={styles.section} id='skills'>
-      <h2>Skills</h2>
+      <h2>{t('title')}</h2>
 
       <div className={styles['skills-and-legend-container']}>
         <motion.div
