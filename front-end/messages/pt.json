@@ -29,20 +29,21 @@
     "CV": "Currículo"
   },
   "Skills": {
+    "title": "O que sei fazer",
     "percentages-meaning": {
       "title": "O que significam estas percentagens?"
     }
   },
   "Portfolio": {
-    "title": "Portfólio"
+    "title": "As minhas criações"
   },
   "Hire-me": {
-    "title": "Contacte-me",
+    "title": "Ficaste interessado? Contacta-me!",
     "Form": {
       "name": "Nome",
       "message": "Mensagem",
       "submit": "Submeter",
-      "submit-message": "Obrigado por me contactares! Contactarei de volta o mais brevemente possivel.",
+      "submit-message": "Obrigado por me contactares! Contactarei de volta o mais brevemente possível.",
       "error-message": "Ocorreu um erro ao submeter o formulario de contacto. Por favor tente novamente mais tarde."
     }
   }

@@ -29,15 +29,16 @@
     "CV": "Curriculum"
   },
   "Skills": {
+    "title": "Skills that pay the bills",
     "percentages-meaning": {
       "title": "What do these percentages mean?"
     }
   },
   "Portfolio": {
-    "title": "Portfolio"
+    "title": "My awesome work"
   },
   "Hire-me": {
-    "title": "Hire-me",
+    "title": "Interested? Get in touch with me!",
     "Form": {
       "name": "Name",
       "message": "Message",
