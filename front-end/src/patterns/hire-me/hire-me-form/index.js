@@ -6,12 +6,14 @@ import { Alert, Paper } from '@mui/material'
 import CheckIcon from '@mui/icons-material/Check'
 import { useFormState } from 'react-dom'
 import { sendEmail } from '@/actions/sendEmail'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import styles from './hireMeForm.module.css'
 import validateEmail from '@/validators/emailValidator'
 import validateNotEmpty from '@/validators/notEmptyValidator'
 import { useTranslations } from 'next-intl'
+import { motion } from 'framer-motion'
+import Confetti from '@/components/confetti'
 
 export default function HireMeForm() {
   const {
@@ -27,6 +29,8 @@ export default function HireMeForm() {
     },
   })
 
+  const ref = useRef()
+  const [isConfettiActive, setIsConfettiActive] = useState(false)
   const [submitting, setSubmitting] = useState(false)
   const [sendEmailState, sendEmailAction] = useFormState(sendEmail, {
     error: null,
@@ -40,8 +44,16 @@ export default function HireMeForm() {
     sendEmailAction(data)
   }
 
+  const handleClick = () => {
+    setIsConfettiActive(true)
+  }
+
   useEffect(() => {
     setSubmitting(false)
+
+    if (sendEmailState.success) {
+      setIsConfettiActive(true)
+    }
   }, [sendEmailState])
 
   return (
@@ -101,6 +113,20 @@ export default function HireMeForm() {
       <Button loading={submitting} type='submit' variant='contained'>
         {t('submit')}
       </Button>
+
+      {isConfettiActive && (
+        <div
+          ref={ref}
+          style={{
+            maxHeight: '0',
+            display: 'flex',
+            justifyContent: 'center',
+            marginTop: '-16px',
+          }}
+        >
+          <Confetti setIsConfettiActive={setIsConfettiActive} />
+        </div>
+      )}
     </Paper>
   )
 }
