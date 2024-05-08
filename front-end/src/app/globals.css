@@ -35,7 +35,8 @@ textarea,
 input,
 label,
 p,
-div {
+div,
+li {
   font-family: 'Poppins', sans-serif !important;
 }
 
