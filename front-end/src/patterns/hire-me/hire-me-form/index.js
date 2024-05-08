@@ -78,6 +78,7 @@ export default function HireMeForm() {
         rules={{
           validate: { validateNotEmpty },
         }}
+        autoComplete='name'
       />
 
       <TextFieldController
@@ -90,6 +91,7 @@ export default function HireMeForm() {
         rules={{
           validate: { validateEmail },
         }}
+        autoComplete='email'
       />
 
       <TextFieldController
@@ -103,6 +105,7 @@ export default function HireMeForm() {
         rules={{
           validate: { validateNotEmpty },
         }}
+        autoComplete='off'
       />
 
       <Button loading={submitting} type='submit' variant='contained'>
