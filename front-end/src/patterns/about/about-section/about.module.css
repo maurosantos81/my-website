@@ -60,6 +60,7 @@
 .image {
   border-radius: 8px;
   padding: min(1.25rem, 10vw);
+  object-fit: cover;
 }
 
 @media screen and (max-width: 768px) {

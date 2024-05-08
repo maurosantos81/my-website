@@ -10,12 +10,6 @@ import DownloadCVButton from '../downloadCVButton'
 export default function AboutSection() {
   const t = useTranslations('About')
 
-  const buttonVariants = {
-    initial: { scale: 1 },
-    animate: { scale: 1.1 },
-    transition: { duration: 0.2 },
-  }
-
   return (
     <WidthLimitedSection divClassName={styles.container} id='about'>
       <div className={styles['text-container']}>
@@ -59,29 +53,6 @@ export default function AboutSection() {
         <p className={styles.bold}>{t('p4')}</p>
       </div>
 
-      {/* <motion.div
-        whileTap='animate'
-        variants={buttonVariants}
-        initial='initial'
-      >
-        <Button
-          className={styles['curriculum-button']}
-          variant='outlined'
-          endIcon={<DownloadIcon sx={{ fontSize: '15px' }} />}
-          sx={{
-            color: 'white',
-            borderColor: '#fff',
-            borderRadius: '12px',
-            '&:hover': {
-              backgroundColor: 'transparent',
-              borderColor: '#ffffff82',
-            },
-          }}
-        >
-          {t('CV')}
-        </Button>
-      </motion.div> */}
-
       <DownloadCVButton />
 
       <div className={styles['image-container']}>
@@ -90,7 +61,6 @@ export default function AboutSection() {
           src={'/images/me.jpg'}
           alt='Mauro photo'
           fill
-          objectFit='cover'
         />
       </div>
     </WidthLimitedSection>
