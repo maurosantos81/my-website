@@ -17,7 +17,6 @@
 .skill-txt {
   color: var(--white-bg-p-color);
   font-weight: 600;
-  font-size: var(--p-small-font-size);
 }
 
 .skill-box {
