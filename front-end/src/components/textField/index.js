@@ -4,10 +4,7 @@ import styled from '@emotion/styled'
 import { FormControl, InputBase, InputLabel } from '@mui/material'
 import styles from './textfield.module.css'
 
-const BootstrapTextField = styled(InputBase)(({ theme }) => ({
-  'label + &': {
-    marginBottom: '4px',
-  },
+const BootstrapTextField = styled(InputBase)(({}) => ({
   '& .MuiInputBase-input': {
     marginTop: '22px',
     borderRadius: 4,
