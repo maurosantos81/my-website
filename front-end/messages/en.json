@@ -46,5 +46,9 @@
       "submit-message": "Thank you for reaching out! I'll get back to you as soon as possible",
       "error-message": "An error ocurred while submitting the contact form. Please try again later."
     }
+  },
+  "Errors": {
+    "empty-error": "Text must not be empty",
+    "invalid-email": "Invalid email address"
   }
 }

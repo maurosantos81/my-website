@@ -37,7 +37,7 @@ export default function TextField({ label, id, name, error, ...props }) {
         {label}
       </InputLabel>
       <BootstrapTextField id={id || name} {...props} />{' '}
-      <p className={styles.error}>{error?.message}</p>
+      <p className={styles.error}>{error?.message || error}</p>
     </FormControl>
   )
 }

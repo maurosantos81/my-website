@@ -3,7 +3,7 @@ export default function validateEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
   if (email && !emailRegex.test(email)) {
-    return 'Endereço de email invalido.'
+    return 'invalid-email'
   }
 
   return true

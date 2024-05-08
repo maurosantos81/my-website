@@ -14,6 +14,14 @@ import validateNotEmpty from '@/validators/notEmptyValidator'
 import { useTranslations } from 'next-intl'
 import Confetti from '@/components/confetti'
 
+const getTranslatedErrorMessage = (t, error) => {
+  if (error?.message) {
+    return t(error.message)
+  }
+
+  return undefined
+}
+
 export default function HireMeForm() {
   const {
     control,
@@ -36,6 +44,7 @@ export default function HireMeForm() {
     success: false,
   })
   const t = useTranslations('Hire-me.Form')
+  const errorTranslator = useTranslations('Errors')
 
   const onSubmit = (data) => {
     reset()
@@ -68,13 +77,12 @@ export default function HireMeForm() {
       {sendEmailState.error && (
         <Alert severity='error'>{t('error-message')}</Alert>
       )}
-
       <TextFieldController
         name='name'
         control={control}
         required
         label={t('name')}
-        error={errors.name}
+        error={getTranslatedErrorMessage(errorTranslator, errors.name)}
         rules={{
           validate: { validateNotEmpty },
         }}
@@ -84,7 +92,7 @@ export default function HireMeForm() {
       <TextFieldController
         name='email'
         control={control}
-        error={errors.email}
+        error={getTranslatedErrorMessage(errorTranslator, errors.email)}
         type='email'
         required
         label='Email'
@@ -99,7 +107,7 @@ export default function HireMeForm() {
         control={control}
         required
         multiline
-        error={errors.message}
+        error={getTranslatedErrorMessage(errorTranslator, errors.message)}
         rows={5}
         label={t('message')}
         rules={{
