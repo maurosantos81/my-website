@@ -1,5 +1,7 @@
 User-agent: *
-Disallow: /_next/
-Disallow: /api/
+Disallow: /*_buildManifest.js$
+Disallow: /*_middlewareManifest.js$
+Disallow: /*_ssgManifest.js$
+Disallow: /*.js$
 
 Sitemap: https://www.maurosantos.xyz/sitemap.xml
