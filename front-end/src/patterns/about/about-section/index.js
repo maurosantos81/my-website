@@ -50,7 +50,7 @@ export default function AboutSection() {
             ),
           })}
         </p>
-        <p className={styles.bold}>{t('p4')}</p>
+        <p className={`${styles.bold} ${styles.oblique}`}>{t('p4')}</p>
       </div>
 
       <DownloadCVButton />

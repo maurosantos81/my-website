@@ -32,6 +32,10 @@
   font-weight: 700 !important;
 }
 
+.oblique {
+  font-style: oblique;
+}
+
 .image-container {
   position: relative;
   width: calc(400px + 4vw);

@@ -7,10 +7,10 @@
   --div-height: 680px;
   --max-page-width: 1920px;
 
-  --h1-font-size: min(calc(1.8rem + 1.8vw), 110px);
+  --h1-font-size: min(calc(1.75rem + 1.8vw), 110px);
   --h2-font-size: calc(1.9rem + 0.65vw);
-  --p-font-size: max(calc(0.58rem + 0.4vw), 12px);
-  --p-small-font-size: max(calc(0.6rem + 0.3vw), 12px);
+  --p-font-size: max(calc(0.57rem + 0.38vw), 12.5px);
+  --p-small-font-size: max(calc(0.6rem + 0.28vw), 12px);
 
   --white-bg-p-color: #727272;
   --dark-bg-p-color: #a6a4a8;
@@ -34,7 +34,8 @@ body {
 textarea,
 input,
 label,
-p {
+p,
+div {
   font-family: 'Poppins', sans-serif !important;
 }
 
@@ -49,6 +50,7 @@ h4,
 h5 {
   font-family: Sans-Serif;
   font-weight: 600;
+  line-height: 1.4;
 }
 
 h1 {
