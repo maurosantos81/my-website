@@ -31,8 +31,8 @@ export default function PortfolioItem({
               src={img}
               sizes='100vw'
               alt={`Site ${language.name}`}
-              width={1000}
-              height={1000}
+              width={430}
+              height={310}
             />
           </div>
         </Link>

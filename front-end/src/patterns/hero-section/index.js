@@ -33,10 +33,14 @@ export default function HeroSection() {
           srcSet='/images/hero/hero-section_j3upiy_c_scale,w_1770.webp 590w,
           /images/hero/hero-section_j3upiy_c_scale,w_3194.webp 800w,
           /images/hero/hero-section.webp 1365w'
-          sizes='(min-width: 780px) 1365px, 100vw'
+          sizes='(min-width: 800px) 1365px, 100vw'
           src='/images/hero/hero-section.webp'
           alt='computer with a sunset on screen'
           fill
+          styles={{
+            objectFit: 'contain',
+            objectPosition: 'center',
+          }}
         />
       </div>
     </WidthLimitedSection>
