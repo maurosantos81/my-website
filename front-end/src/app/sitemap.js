@@ -16,5 +16,13 @@ export default function sitemap() {
         ),
       },
     },
+    {
+      url: getUrl('pt'),
+      alternates: {
+        languages: Object.fromEntries(
+          locales.map((locale) => [locale, getUrl(locale)]),
+        ),
+      },
+    },
   ]
 }
