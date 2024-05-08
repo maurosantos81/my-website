@@ -31,7 +31,6 @@ export default function PortfolioItem({
               src={img}
               sizes='100vw'
               alt={`Site ${language.name}`}
-              layout='responsive'
               width={1000}
               height={1000}
             />

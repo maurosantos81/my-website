@@ -58,9 +58,10 @@ export default function AboutSection() {
       <div className={styles['image-container']}>
         <Image
           className={styles.image}
-          src={'/images/me.jpg'}
+          src='/images/me.jpg'
           alt='Mauro photo'
           fill
+          sizes='(max-width: 620px) 90vw, 700px'
         />
       </div>
     </WidthLimitedSection>

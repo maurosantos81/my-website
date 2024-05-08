@@ -37,8 +37,6 @@ export default function HeroSection() {
           src='/images/hero/hero-section.webp'
           alt='computer with a sunset on screen'
           fill
-          objectFit='contain'
-          objectPosition='center'
         />
       </div>
     </WidthLimitedSection>
