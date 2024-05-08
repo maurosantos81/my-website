@@ -33,6 +33,7 @@ const CustomTooltip = styled(({ className, ...props }) => (
 
   [`& .${tooltipClasses.tooltip} p`]: {
     fontSize: 'var(--p-small-font-size)',
+    fontWeight: '300',
   },
 }))
 

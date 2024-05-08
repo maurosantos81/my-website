@@ -48,7 +48,7 @@ export default function SkillItem({ skill, level, icon, saw }) {
         <div className={styles['skill-box']}>
           <Tooltip
             title={getDescriptions(level)?.map((desc, index) => (
-              <p key={index}>{`${desc}.`}</p>
+              <p className={styles['tooltip-txt']} key={index}>{`${desc}.`}</p>
             ))}
           >
             <div

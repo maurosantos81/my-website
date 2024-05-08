@@ -3,12 +3,12 @@
   border-radius: 30px;
   color: #fff;
   padding: max(0.05vw, 0.3rem) max(0.5vw, 0.55rem);
-  font-size: max(calc(var(--p-font-size) - 3.15px), 0.7rem);
+  font-size: max(calc(var(--p-font-size) - 3px), 0.7rem);
   width: fit-content;
 }
 
 @media screen and (min-width: 2400px) {
   .container {
-    font-size: calc(var(--p-font-size));
+    font-size: var(--p-font-size);
   }
 }

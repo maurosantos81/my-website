@@ -30,6 +30,10 @@
   height: calc(40px + 0.3vw);
 }
 
+.tooltip-txt + p {
+  margin-top: 4px;
+}
+
 .skill-fill {
   position: relative;
   background-color: var(--dark-bg);
