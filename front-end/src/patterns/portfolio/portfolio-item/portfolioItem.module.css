@@ -23,7 +23,7 @@
 }
 
 .title {
-  font-size: max(calc(0.835rem + 0.35vw), 18px);
+  font-size: max(calc(0.8rem + 0.35vw), 17px);
 }
 
 .date {

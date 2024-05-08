@@ -2,7 +2,7 @@
   background-color: var(--dark-bg);
   border-radius: 30px;
   color: #fff;
-  padding: max(0.05vw, 0.3rem) max(0.5vw, 0.55rem);
+  padding: max(0.05vw, 0.32rem) max(0.5vw, 0.6rem);
   font-size: max(calc(var(--p-font-size) - 3px), 0.7rem);
   width: fit-content;
 }
