@@ -4,6 +4,7 @@ import Footer from '@/patterns/footer'
 import { NextIntlClientProvider, useMessages } from 'next-intl'
 import { locales } from '@/constants/locales'
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
+import { poppins } from '@/utils/fontUtils'
 
 export async function generateMetadata({ params: { locale } }) {
   const t = await getTranslations({ locale, namespace: 'Metadata' })
@@ -69,7 +70,7 @@ function RootLayout({ children, params: { locale } }) {
   unstable_setRequestLocale(locale)
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={poppins.className}>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
