@@ -6,6 +6,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: scale 0.35s ease-in-out;
+}
+
+.item:hover {
+  scale: 1.05;
 }
 
 .item h2 {
@@ -16,6 +21,23 @@
   border-radius: 10px;
   position: relative;
   margin-bottom: 24px;
+}
+
+.image-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.image-cover:hover {
+  background-color: white;
+  opacity: 0.6;
 }
 
 .image {

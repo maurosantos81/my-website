@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import styles from './portfolioItem.module.css'
-import { Paper } from '@mui/material'
+import { IconButton, Paper } from '@mui/material'
 import TechnologyItem from '@/components/technology-item'
 import Link from '@/components/link'
 import { useLocale } from 'next-intl'
+import OpenInNewIcon from '@mui/icons-material/OpenInNew'
 
 export default function PortfolioItem({
   en,
@@ -26,6 +27,9 @@ export default function PortfolioItem({
       <div>
         <Link href={url}>
           <div className={styles['img-container']}>
+            <div className={styles['image-cover']}>
+              <OpenInNewIcon />
+            </div>
             <Image
               className={styles['image']}
               src={img}
