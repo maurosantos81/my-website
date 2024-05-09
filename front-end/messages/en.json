@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Mauro Santos - Full Stack Developer",
-    "description": "Elevate your projects to another level with a Java and Next.js developer! With a passion for coding, I'm here to bring fresh perspectives and innovation to every task. From robust back-end solutions to stylish front-end interfaces, I'll turn your idea into reality!",
+    "description": "Elevate your projects to another level with a web developer! From robust back-end solutions to stylish front-end interfaces, I'll turn your idea into reality!",
     "category": "technology",
     "Keywords": {
       "programmer": "programmer",
@@ -22,8 +22,8 @@
   },
   "About": {
     "title": "Hi, I'm Mauro. Nice to meet you!",
-    "p1": "My programming journey began almost a decade ago, due to an insatiable curiosity and a desire to create my own minecraft plugins (as you can see on my old <link>Youtube Channel</link>.)",
-    "p2": "After my carrer as a minecraft plugin developer ended prematurely, I started to programming desktop applications using Java. This journey continued until I completed my degree in Computer Engineering at the <universityLink>University of Algarve</universityLink> in 2022 and started to work at <evidenLink>Eviden</evidenLink>, where I've been employed for nearly 2 years. It was at Eviden where I met React and the world of web development.",
+    "p1": "My programming journey began almost a decade ago, due to an insatiable curiosity and a desire to create my own minecraft plugins (as you can see on my old <link>Youtube Channel</link>).",
+    "p2": "After my carrer as a minecraft plugin developer ended prematurely, I started to programming desktop applications using Java. This journey continued until I completed my degree in Computer Engineering at the <universityLink>University of Algarve</universityLink> in 2022 and started to work at <evidenLink>Eviden</evidenLink>, where I've been employed for nearly 2 years. It was at Eviden where I met <reactLink>React</reactLink> and the world of web development.",
     "p3": "In addition to my academic and professional journey, I am dedicated to continual growth and learning, both personally and professionally. I strive to stay aware of industry advancements, constantly seeking opportunities to expand my skill set and deepen my knowledge. My approach to work is centered around maximizing my productivity through the strategic application of artificial intelligence tools and other proven techniques (Ex: <linkPomodoro>Pomodoro Technique</linkPomodoro>), all while ensuring the delivery of high-quality code.",
     "p4": "Let's connect and embark on a journey of innovation and success together!",
     "CV": "Curriculum"

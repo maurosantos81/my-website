@@ -27,12 +27,17 @@ export default function AboutSection() {
         <p>
           {t.rich('p2', {
             universityLink: (txt) => (
-              <Link text href='https://www.ualg.pt/'>
+              <Link text href='https://www.ualg.pt/curso/1478'>
                 {txt}
               </Link>
             ),
             evidenLink: (txt) => (
               <Link text href='https://eviden.com/'>
+                {txt}
+              </Link>
+            ),
+            reactLink: (txt) => (
+              <Link text href='https://react.dev/'>
                 {txt}
               </Link>
             ),
