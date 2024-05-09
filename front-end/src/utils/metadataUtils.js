@@ -44,6 +44,14 @@ export async function getMetadata(t, locale) {
         alt: 'Mauro Santos Logo',
       },
     },
+    metadataBase: new URL('https://www.maurosantos.xyz'),
+    alternates: {
+      canonical: '/',
+      languages: {
+        en: '/en/',
+        pt: '/pt/',
+      },
+    },
     other: {
       viewport:
         'height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0',
