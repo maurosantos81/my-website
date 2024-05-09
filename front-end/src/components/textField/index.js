@@ -6,7 +6,6 @@ import styles from './textfield.module.css'
 
 const BootstrapTextField = styled(InputBase)(({}) => ({
   '& .MuiInputBase-input': {
-    marginTop: '22px',
     borderRadius: 4,
     position: 'relative',
     backgroundColor: '#F3F6F9',
@@ -18,7 +17,14 @@ const BootstrapTextField = styled(InputBase)(({}) => ({
   },
 }))
 
-export default function TextField({ label, id, name, error, ...props }) {
+export default function TextField({
+  label,
+  id,
+  name,
+  error,
+  multiline,
+  ...props
+}) {
   return (
     <FormControl variant='standard'>
       <InputLabel
@@ -33,7 +39,12 @@ export default function TextField({ label, id, name, error, ...props }) {
       >
         {label}
       </InputLabel>
-      <BootstrapTextField id={id || name} {...props} />{' '}
+      <BootstrapTextField
+        className={multiline ? styles['text-area'] : styles['text-field']}
+        id={id || name}
+        multiline={multiline}
+        {...props}
+      />{' '}
       <p className={styles.error}>{error?.message || error}</p>
     </FormControl>
   )

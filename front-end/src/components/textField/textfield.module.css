@@ -13,3 +13,11 @@
   text-align: left;
   font-size: 0.7rem;
 }
+
+.text-field {
+  margin-top: 24px;
+}
+
+.text-area {
+  margin-top: 20px;
+}
