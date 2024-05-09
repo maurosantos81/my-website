@@ -37,6 +37,7 @@ export default function HeroSection() {
           src='/images/hero/hero-section.webp'
           alt='computer with a sunset on screen'
           fill
+          priority
           styles={{
             objectFit: 'contain',
             objectPosition: 'center',
