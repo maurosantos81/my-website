@@ -1,10 +1,17 @@
+import { useLocale } from 'next-intl'
 import styles from './percentagesDefinition.module.css'
-import levelDefinitions from '@/json/skillsLevelDefinitionsPt.json'
 
 export default function PercentagesDefinition() {
+  const locale = useLocale()
+  const capitalizedLocale = locale.charAt(0).toUpperCase() + locale.slice(1)
+
+  const levelDefinitions = require(
+    `@/json/skillsLevelDefinitions${capitalizedLocale}.json`,
+  )
+
   return (
     <div className={styles['captations-container']}>
-      {levelDefinitions.map((skillCap) => (
+      {levelDefinitions?.map((skillCap) => (
         <div key={skillCap.level}>
           <p className={styles['legend-title']}>{skillCap.level}</p>
           <ul>
