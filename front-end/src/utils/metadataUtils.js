@@ -46,7 +46,7 @@ export async function getMetadata(t, locale) {
     },
     metadataBase: new URL('https://www.maurosantos.xyz'),
     alternates: {
-      canonical: '/',
+      canonical: '/en/',
       languages: {
         en: '/en/',
         pt: '/pt/',
