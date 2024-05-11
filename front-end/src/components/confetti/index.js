@@ -1,6 +1,6 @@
 import ConfettiItem from '../confettiItem'
 
-const numConfettis = 100
+const numConfettis = 75
 
 const confettiColors = [
   '#FF0000', // Red
