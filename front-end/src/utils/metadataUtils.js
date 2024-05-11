@@ -10,7 +10,7 @@ export async function getMetadata(t, locale) {
       siteName: t('title'),
       description: t('description'),
       locale: { locale },
-      images: ['/images/logo.png'],
+      images: ['/images/logo.webp'],
       authors: ['Mauro Santos'],
       type: 'website',
     },
@@ -40,7 +40,7 @@ export async function getMetadata(t, locale) {
       title: t('title'),
       description: t('description'),
       images: {
-        url: '/images/logo.png',
+        url: '/images/logo.webp',
         alt: 'Mauro Santos Logo',
       },
     },
