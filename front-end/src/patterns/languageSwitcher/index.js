@@ -52,7 +52,7 @@ export default function LanguageSwitcher({ className = '' }) {
         <Image
           width={30}
           height={30}
-          src={`/images/${locale}-flag.webp`}
+          src={`/images/${locale}-flag.svg`}
           alt={locale === 'en' ? 'English' : 'Portuguese'}
         />
         <KeyboardArrowDownIcon style={{ color: '#fff' }} fontSize='12px' />
