@@ -15,16 +15,18 @@
   display: flex;
 }
 
-.languageSwitcher img {
-  object-fit: contain;
-}
-
 .ul {
   position: absolute;
   top: 100%;
   background-color: #fff;
   width: calc(100% - 0.75rem);
   border-radius: 0px 0px 10px 10px;
+}
+
+.languageSwitcher img,
+.ul img {
+  width: auto;
+  height: 20px;
 }
 
 .item {

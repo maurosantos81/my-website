@@ -50,8 +50,8 @@ export default function LanguageSwitcher({ className = '' }) {
         onClick={() => setIsOpen(!isOpen)}
       >
         <Image
-          width={30}
-          height={30}
+          width={40}
+          height={20}
           src={`/images/${locale}-flag.svg`}
           alt={locale === 'en' ? 'English' : 'Portuguese'}
         />
@@ -81,9 +81,9 @@ export default function LanguageSwitcher({ className = '' }) {
                     }}
                   >
                     <Image
-                      width={32}
-                      height={21}
-                      src={`/images/${localeItem}-flag.webp`}
+                      width={30}
+                      height={20}
+                      src={`/images/${localeItem}-flag.svg`}
                       alt={localeItem === 'en' ? 'English' : 'Portuguese'}
                     />
                   </motion.li>
