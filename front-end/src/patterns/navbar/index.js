@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <nav className={`${styles.container}`}>
       <div className={styles['icon-container']}>
-        <Image height={50} width={50} src='/images/logo.webp' alt='icon' />
+        <Image height={50} width={50} src='/images/logo.svg' alt='icon' />
         <LanguageSwitcher className={styles['icon-lang-switcher']} />
       </div>
 
