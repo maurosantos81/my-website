@@ -57,6 +57,10 @@ h2 {
   margin: 0 auto;
 }
 
+img {
+  pointer-events: none;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
