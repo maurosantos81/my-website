@@ -1,0 +1,38 @@
+.languageSwitcher {
+  gap: 2px;
+  padding: 0.75rem 0.75rem;
+  align-items: center;
+}
+
+.languageSwitcher,
+.item {
+  cursor: pointer;
+}
+
+.languageSwitcher,
+.menu,
+.item {
+  display: flex;
+}
+
+.ul {
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  width: calc(100% - 0.75rem);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.item {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+}
+
+@media screen and (max-width: 655px) {
+  .ul {
+    width: 100%;
+  }
+}

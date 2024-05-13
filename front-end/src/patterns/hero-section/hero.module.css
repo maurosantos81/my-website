@@ -151,7 +151,7 @@
 }
 
 /* Change the max-width also in navbar.module.css */
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 655px) {
   .container {
     padding-top: 143px !important;
   }

@@ -39,6 +39,10 @@
   background-color: #ffffff1e;
 }
 
+.icon-lang-switcher {
+  display: none;
+}
+
 .img-container {
   width: 50px;
 }
@@ -52,18 +56,42 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 1.5rem 5rem;
+  }
+}
+
+/* Change the max-width also in hero.module.css */
+@media screen and (max-width: 655px) {
   .container {
     padding: 1.5rem 3.5rem;
+    width: auto;
   }
 
   .container .right {
     gap: 0.5rem;
   }
-}
 
-/* Change the max-width also in hero.module.css */
-@media screen and (max-width: 525px) {
+  .icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .icon-lang-switcher {
+    display: block;
+  }
+
+  .icon-lang-switcher > div {
+    margin-right: -0.75rem; /* value related to language switcher padding right*/
+  }
+
+  .lang-switcher {
+    display: none;
+  }
+
   .container {
     flex-direction: column;
     align-items: center;
@@ -85,6 +113,10 @@
 }
 
 @media screen and (max-width: 270px) {
+  .container {
+    width: 100%;
+  }
+
   .container .right {
     display: none;
   }
