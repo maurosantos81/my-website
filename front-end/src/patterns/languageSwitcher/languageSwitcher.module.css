@@ -15,6 +15,10 @@
   display: flex;
 }
 
+.languageSwitcher img {
+  object-fit: contain;
+}
+
 .ul {
   position: absolute;
   top: 100%;
