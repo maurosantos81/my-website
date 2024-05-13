@@ -23,7 +23,7 @@
       "description": "This project is the website you're currently exploring, and its code can be accessed by clicking on the image. Constructive feedback and tips to improve the code are welcome!"
     },
     "date": "16/04/2024",
-    "img": "/images/my-website.png",
+    "img": "/images/my-website.webp",
     "url": "https://github.com/maurosantos81/my-website",
     "technologys": ["Next JS"]
   }
